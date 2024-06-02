@@ -1,0 +1,5 @@
+* text=auto
+
+Content/Static/** filter=lfs diff=lfs merge=lfs -text
+Content/CitySampleCrowd/** filter=lfs diff=lfs merge=lfs -text
+Content/SubwayTrain/** filter=lfs diff=lfs merge=lfs -text
