@@ -20,13 +20,22 @@ protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	UPROPERTY(EditAnywhere)
 	bool Open = false;
+	UPROPERTY(EditAnywhere)
+	bool Locked = true;
+	UPROPERTY(EditAnywhere)
+	FVector OpenPosition;
+	UPROPERTY(EditAnywhere)
+	FVector ClosedPosition;
+	UPROPERTY(EditAnywhere)
+	float MoveSpeed;
 	
-
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+	void OpenDoor();
+	void CloseDoor();
 
 private:
 	FVector CurrentPosition;

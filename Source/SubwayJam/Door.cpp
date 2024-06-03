@@ -18,7 +18,7 @@ void UDoor::BeginPlay()
 	Super::BeginPlay();
 	
 	CurrentPosition = GetOwner()->GetActorLocation();
-	UE_LOG(LogTemp, Display, TEXT("After: %s"), *CurrentPosition.ToCompactString());
+	UE_LOG(LogTemp, Display, TEXT("%s"), *CurrentPosition.ToCompactString());
 }
 
 
@@ -28,6 +28,19 @@ void UDoor::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentT
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
 	// ...
+	
+}
+
+void UDoor::OpenDoor()
+{
+	if(!Locked)
+	{
+		
+	}
+}
+
+void UDoor::CloseDoor()
+{
 	
 }
 
