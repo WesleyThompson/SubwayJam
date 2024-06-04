@@ -6,6 +6,7 @@
 #include "Components/ActorComponent.h"
 #include "Door.generated.h"
 
+class USoundBase;
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class SUBWAYJAM_API UDoor : public UActorComponent
@@ -22,9 +23,7 @@ protected:
 
 public:
 	UPROPERTY(EditAnywhere)
-	bool Open = false;
-	UPROPERTY(EditAnywhere)
-	bool Locked = true;
+	bool Locked = false;
 	UPROPERTY(EditAnywhere)
 	FVector OpenPosition;
 	UPROPERTY(EditAnywhere)
@@ -38,6 +37,11 @@ public:
 	void CloseDoor();
 
 private:
+	UPROPERTY(EditAnywhere)
+	USoundBase* OpenSound;
+	UPROPERTY(EditAnywhere)
+	USoundBase* CloseSound;
+	
 	FVector CurrentPosition;
 	
 };

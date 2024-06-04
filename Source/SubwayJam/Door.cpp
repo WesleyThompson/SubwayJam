@@ -3,6 +3,9 @@
 
 #include "Door.h"
 
+#include "Kismet/GameplayStatics.h"
+#include "Sound/SoundBase.h"
+
 // Sets default values for this component's properties
 UDoor::UDoor()
 {
@@ -35,12 +38,15 @@ void UDoor::OpenDoor()
 {
 	if(!Locked)
 	{
-		
+		UGameplayStatics::PlaySoundAtLocation(GetWorld(), OpenSound, GetOwner()->GetActorLocation());
 	}
 }
 
 void UDoor::CloseDoor()
 {
-	
+	if(!Locked)
+	{
+		UGameplayStatics::PlaySoundAtLocation(GetWorld(), CloseSound, GetOwner()->GetActorLocation());
+	}
 }
 
