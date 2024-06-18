@@ -3,16 +3,58 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{A0623F86-335D-4E9A-9710-BB227982DB85}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="Ambiences" ID="{6188AEDA-C57E-408F-8E35-5BB4037BFFF7}" ShortID="527255770">
+				<SwitchContainer Name="Footsteps" ID="{EAA40347-F011-4A14-8907-F0300F65A019}" ShortID="561404667">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{07783280-B89C-4BD7-B6E9-3B515A8F9A52}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="10"/>
+											<Property Name="Min" Type="Real64" Value="-10"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Walking" ID="{02424B7A-927F-4324-BCC2-6191D1B36953}" WorkUnitID="{DF171165-E186-460F-B5FE-B0625C3F63FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Footsteps" ID="{A320CEB1-4193-424A-BFD3-B56B7D052538}" WorkUnitID="{DF171165-E186-460F-B5FE-B0625C3F63FF}"/>
+						</Reference>
+					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Ambience_1" ID="{C28D52D2-6D01-4B6E-A1D7-6F318D045FA4}" ShortID="76539276">
+						<RandomSequenceContainer Name="Walk" ID="{9C0DB1DF-68BA-4EFE-BA3E-9FC108BD5061}" ShortID="896496255">
 							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Lowpass" Type="int16">
-									<ValueList>
-										<Value>70</Value>
-									</ValueList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A796DA9E-C9A9-4069-87B1-06F6DB24FB86}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="10"/>
+													<Property Name="Min" Type="Real64" Value="-10"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -21,8 +63,383 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
 								</Reference>
-								<Reference Name="UserAuxSend0">
-									<ObjectRef Name="Reverb" ID="{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Footstep_Walk_01" ID="{AD338561-AA87-46A3-9515-B3D29CF50140}" ShortID="339755410">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SubwayJam_SFX-001" ID="{91FFC671-BBF3-4A28-8FF6-0B5C09A2F401}">
+											<Language>SFX</Language>
+											<AudioFile>SubwayJam_SFX-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="686477323"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SubwayJam_SFX-001" ID="{91FFC671-BBF3-4A28-8FF6-0B5C09A2F401}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep_Walk_02" ID="{9D22802D-7F8A-4DAA-A18B-A8D20C8F9C8E}" ShortID="783357131">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SubwayJam_SFX-002" ID="{9EED66BF-ADD4-48FD-A52F-FA6E6D3A6434}">
+											<Language>SFX</Language>
+											<AudioFile>SubwayJam_SFX-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1055055969"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SubwayJam_SFX-002" ID="{9EED66BF-ADD4-48FD-A52F-FA6E6D3A6434}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep_Walk_03" ID="{56485970-69B3-4A4B-B176-3F94DAD17596}" ShortID="684841767">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{D4CE368C-A912-4A69-B317-7513EF4DC064}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SubwayJam_SFX-003" ID="{E12D3911-31B7-4C22-9051-6A02F3952A1F}">
+											<Language>SFX</Language>
+											<AudioFile>SubwayJam_SFX-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="195549098"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SubwayJam_SFX-003" ID="{E12D3911-31B7-4C22-9051-6A02F3952A1F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep_Walk_04" ID="{10C740EC-95E2-4CA0-A214-0832A2F84344}" ShortID="198937411">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SubwayJam_SFX-004" ID="{C0E102DD-338F-401D-96E0-4E731156FBF4}">
+											<Language>SFX</Language>
+											<AudioFile>SubwayJam_SFX-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="888046827"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SubwayJam_SFX-004" ID="{C0E102DD-338F-401D-96E0-4E731156FBF4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep_Walk_05" ID="{7F258B1A-47F4-4F0F-A34A-409C089DBDB4}" ShortID="924110403">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SubwayJam_SFX-005" ID="{F7AE67F6-E0C6-4FAC-AB5D-D68547573B2B}">
+											<Language>SFX</Language>
+											<AudioFile>SubwayJam_SFX-005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="298963466"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SubwayJam_SFX-005" ID="{F7AE67F6-E0C6-4FAC-AB5D-D68547573B2B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep_Walk_06" ID="{4D515A5B-3C2E-48A9-8C54-CB56F8609ED3}" ShortID="759620219">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SubwayJam_SFX-006" ID="{F3227E8C-D44A-46E3-9884-BD322173E726}">
+											<Language>SFX</Language>
+											<AudioFile>SubwayJam_SFX-006.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="781141907"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SubwayJam_SFX-006" ID="{F3227E8C-D44A-46E3-9884-BD322173E726}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep_Walk_07" ID="{88BCF40D-CD96-4F54-8E74-ACA36D5782DC}" ShortID="873627477">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{A131538C-AF25-4784-B4B7-500CD3DDB15F}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SubwayJam_SFX-007" ID="{FACA61F0-D7EE-4BD7-8012-7B11390424E1}">
+											<Language>SFX</Language>
+											<AudioFile>SubwayJam_SFX-007.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="660381652"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SubwayJam_SFX-007" ID="{FACA61F0-D7EE-4BD7-8012-7B11390424E1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Run" ID="{77AA386A-B116-4B38-865D-215B89DC2480}" ShortID="214662028">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Footstep_Run_01" ID="{9C5DE2E3-05EF-4194-A3BC-D7CB65E831CF}" ShortID="1062143207">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{38FD0182-CD24-4FE3-A61D-364228984C91}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SubwayJam_SFX-015" ID="{D6305ECC-1DE1-459C-802F-21A99C4AAF55}">
+											<Language>SFX</Language>
+											<AudioFile>SubwayJam_SFX-015.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1043724005"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SubwayJam_SFX-015" ID="{D6305ECC-1DE1-459C-802F-21A99C4AAF55}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep_Run_02" ID="{0C18F1BF-FAD1-4C07-9F04-5EE999CC6BE8}" ShortID="775021255">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SubwayJam_SFX-016" ID="{D111BDC2-04B4-4F8C-87FA-77ECFE0C2654}">
+											<Language>SFX</Language>
+											<AudioFile>SubwayJam_SFX-016.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="625332446"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SubwayJam_SFX-016" ID="{D111BDC2-04B4-4F8C-87FA-77ECFE0C2654}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep_Run_03" ID="{A6C75F97-2E4A-48AD-B907-113698E372A5}" ShortID="906755385">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SubwayJam_SFX-017" ID="{3DCC0684-A3E3-47D9-8813-6F152BD30650}">
+											<Language>SFX</Language>
+											<AudioFile>SubwayJam_SFX-017.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="291791091"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SubwayJam_SFX-017" ID="{3DCC0684-A3E3-47D9-8813-6F152BD30650}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep_Run_04" ID="{C13CFD18-CA93-492C-8390-EFC88FBFA3E3}" ShortID="1017597712">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{8E898B5B-14D4-4266-A236-78A70BA85EA4}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SubwayJam_SFX-018" ID="{A41A3A36-6F34-4580-B6E4-F9026361FFE6}">
+											<Language>SFX</Language>
+											<AudioFile>SubwayJam_SFX-018.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="886502594"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SubwayJam_SFX-018" ID="{A41A3A36-6F34-4580-B6E4-F9026361FFE6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep_Run_05" ID="{6F37D56D-E494-42A4-A4D4-4AB509CDAB3F}" ShortID="743430736">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SubwayJam_SFX-019" ID="{41E4E435-1C3B-4039-B915-76D099260815}">
+											<Language>SFX</Language>
+											<AudioFile>SubwayJam_SFX-019.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="116411201"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SubwayJam_SFX-019" ID="{41E4E435-1C3B-4039-B915-76D099260815}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep_Run_06" ID="{117A1F13-8E2B-418F-9B97-F2C84C87E022}" ShortID="207588783">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SubwayJam_SFX-020" ID="{4D6A0DE6-A6F5-4931-865B-E8A3A952562C}">
+											<Language>SFX</Language>
+											<AudioFile>SubwayJam_SFX-020.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="85380800"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SubwayJam_SFX-020" ID="{4D6A0DE6-A6F5-4931-865B-E8A3A952562C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Run" ID="{77AA386A-B116-4B38-865D-215B89DC2480}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Walk" ID="{9C0DB1DF-68BA-4EFE-BA3E-9FC108BD5061}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Walking" ID="{02424B7A-927F-4324-BCC2-6191D1B36953}"/>
+								<ItemList>
+									<ItemRef Name="Walk" ID="{9C0DB1DF-68BA-4EFE-BA3E-9FC108BD5061}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Running" ID="{BCA76798-E67D-4B54-A06C-E714A3FBB0A9}"/>
+								<ItemList>
+									<ItemRef Name="Run" ID="{77AA386A-B116-4B38-865D-215B89DC2480}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+				<Folder Name="Ambiences" ID="{6188AEDA-C57E-408F-8E35-5BB4037BFFF7}" ShortID="527255770">
+					<ChildrenList>
+						<Sound Name="Ambience_1" ID="{C28D52D2-6D01-4B6E-A1D7-6F318D045FA4}" ShortID="76539276">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -40,696 +457,6 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="UI" ID="{B98BFBE8-A96C-4F8C-8785-15E2692E30AA}" ShortID="959210459">
-					<ChildrenList>
-						<Sound Name="UI_Accept" ID="{39F2F446-F5FB-4877-BBF8-29E33767DA1E}" ShortID="256835252">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="SubwayJam_SFX-077" ID="{D70691FF-4831-4813-B95D-DD1F8983E1BB}">
-									<Language>SFX</Language>
-									<AudioFile>SubwayJam_SFX-077.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="295889543"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="SubwayJam_SFX-077" ID="{D70691FF-4831-4813-B95D-DD1F8983E1BB}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="UI_Click" ID="{411002A3-66FE-47D1-A67D-894289E2BEFD}" ShortID="262312946">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="SubwayJam_SFX-075" ID="{DED4A6A7-952D-484C-B11C-28FFA8244954}">
-									<Language>SFX</Language>
-									<AudioFile>SubwayJam_SFX-075.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="497642096"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="SubwayJam_SFX-075" ID="{DED4A6A7-952D-484C-B11C-28FFA8244954}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="UI_StartGame" ID="{3D8060C6-D7C7-4789-BA57-F3771490A9B5}" ShortID="822193688">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="SubwayJam_SFX-074" ID="{96ACEB40-03C9-4D3C-BEB7-AF394A8D5F37}">
-									<Language>SFX</Language>
-									<AudioFile>SubwayJam_SFX-074.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="736572253"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="SubwayJam_SFX-074" ID="{96ACEB40-03C9-4D3C-BEB7-AF394A8D5F37}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="Enemies" ID="{C85AAB7E-0F36-414F-AF8C-86526264B82A}" ShortID="56398605">
-					<ChildrenList>
-						<Sound Name="Scary_Whisper_3" ID="{4673B478-C1BB-47B4-BE37-1D21A75A0C41}" ShortID="279670595">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-10</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-								</Reference>
-								<Reference Name="UserAuxSend0">
-									<ObjectRef Name="Reverb" ID="{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="SubwayJam_SFX-079" ID="{613E9EF9-7F8E-4E53-B5B3-DC42584334BD}">
-									<Language>SFX</Language>
-									<AudioFile>SubwayJam_SFX-079.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="600472025"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="SubwayJam_SFX-079" ID="{613E9EF9-7F8E-4E53-B5B3-DC42584334BD}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<RandomSequenceContainer Name="Enemy_Attack" ID="{82BB9474-7F10-4131-978F-2BA3EAF372C9}" ShortID="527491423">
-							<PropertyList>
-								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{4241F78E-E851-4A36-BD65-7C1266E5335F}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="150"/>
-													<Property Name="Min" Type="Real64" Value="-150"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-2</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-								</Reference>
-								<Reference Name="UserAuxSend0">
-									<ObjectRef Name="Reverb" ID="{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="Enemy_Attack3" ID="{58259932-CF3D-40B8-9D3E-9338DE2F71C7}" ShortID="588015985">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-										</Reference>
-										<Reference Name="UserAuxSend0">
-											<ObjectRef Name="Reverb" ID="{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SubwayJam_SFX-086" ID="{F9AE7C39-FB94-42E5-B6C0-C5460F4B59E9}">
-											<Language>SFX</Language>
-											<AudioFile>SubwayJam_SFX-086.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="848260569"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SubwayJam_SFX-086" ID="{F9AE7C39-FB94-42E5-B6C0-C5460F4B59E9}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Enemy_Attack1" ID="{B1006E60-0FB6-4AD4-BB74-6E3C60F57A3C}" ShortID="403017625">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-										</Reference>
-										<Reference Name="UserAuxSend0">
-											<ObjectRef Name="Reverb" ID="{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SubwayJam_SFX-084" ID="{DF826683-BBAE-49E5-843C-3390D7C64B25}">
-											<Language>SFX</Language>
-											<AudioFile>SubwayJam_SFX-084.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="146943196"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SubwayJam_SFX-084" ID="{DF826683-BBAE-49E5-843C-3390D7C64B25}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Enemy_Attack2" ID="{7390E06F-1574-4104-BCB9-9B43840E111E}" ShortID="521197316">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-										</Reference>
-										<Reference Name="UserAuxSend0">
-											<ObjectRef Name="Reverb" ID="{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SubwayJam_SFX-085" ID="{13EED5FF-2C8E-48D7-B614-FADE002E1642}">
-											<Language>SFX</Language>
-											<AudioFile>SubwayJam_SFX-085.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="782592832"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SubwayJam_SFX-085" ID="{13EED5FF-2C8E-48D7-B614-FADE002E1642}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="Player" ID="{3BDD2C12-4D59-48D5-A9CF-2F62A34D2611}" ShortID="1055180576">
-					<ChildrenList>
-						<RandomSequenceContainer Name="Player_Hurt" ID="{86CB504C-C8AC-4C52-8E09-3DE379A9A9C9}" ShortID="405537913">
-							<PropertyList>
-								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{FFA6EB1D-0BD5-4899-8F81-1A2DE75C6869}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="100"/>
-													<Property Name="Min" Type="Real64" Value="-100"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-9</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-								</Reference>
-								<Reference Name="UserAuxSend0">
-									<ObjectRef Name="Reverb" ID="{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="Player_Hurt1" ID="{F8862D88-0D53-4FB6-AF61-5D532BABF85D}" ShortID="22378233">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SubwayJam_SFX-092" ID="{6E2C2D31-D3BF-4A5E-B401-625A19A9355B}">
-											<Language>SFX</Language>
-											<AudioFile>SubwayJam_SFX-092.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="448944935"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SubwayJam_SFX-092" ID="{6E2C2D31-D3BF-4A5E-B401-625A19A9355B}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Player_Hurt2" ID="{0C6E28EE-5BC5-42DE-BDC1-DB4F645717E0}" ShortID="609675557">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SubwayJam_SFX-093" ID="{04305358-3EEF-4F6B-9661-909C8F865C9B}">
-											<Language>SFX</Language>
-											<AudioFile>SubwayJam_SFX-093.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="772691773"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SubwayJam_SFX-093" ID="{04305358-3EEF-4F6B-9661-909C8F865C9B}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Player_Hurt3" ID="{DA5B684A-40F4-4A11-9FAF-332EBC62F230}" ShortID="957554317">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SubwayJam_SFX-094" ID="{AFFBAFD4-582B-421E-8DE9-5E0299FFFCBD}">
-											<Language>SFX</Language>
-											<AudioFile>SubwayJam_SFX-094.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="792563256"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SubwayJam_SFX-094" ID="{AFFBAFD4-582B-421E-8DE9-5E0299FFFCBD}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Player_Hurt4" ID="{3F57214B-B8D0-4C29-98DE-FB80C85E9241}" ShortID="894770711">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SubwayJam_SFX-095" ID="{119A25CF-B412-4CE5-AE73-DFD6733CE5CC}">
-											<Language>SFX</Language>
-											<AudioFile>SubwayJam_SFX-095.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="281704824"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SubwayJam_SFX-095" ID="{119A25CF-B412-4CE5-AE73-DFD6733CE5CC}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="Player_Push" ID="{F3DD40DC-497D-4F7F-B16C-754FA2C51E13}" ShortID="787172220">
-							<PropertyList>
-								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-2</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="Push_1" ID="{67DC3BD2-7E64-4DA5-8426-786958D42A0A}" ShortID="20051096">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SubwayJam_SFX-088" ID="{531AC4EE-AD46-447F-9795-0E22A0330CAF}">
-											<Language>SFX</Language>
-											<AudioFile>SubwayJam_SFX-088.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="142240528"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SubwayJam_SFX-088" ID="{531AC4EE-AD46-447F-9795-0E22A0330CAF}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Push_2" ID="{0127E6CE-3BB1-4870-AEE7-5A06B8E5F12D}" ShortID="811276944">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SubwayJam_SFX-089" ID="{497CFCF2-4B8A-4396-A462-19062B7BE05B}">
-											<Language>SFX</Language>
-											<AudioFile>SubwayJam_SFX-089.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="779934013"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SubwayJam_SFX-089" ID="{497CFCF2-4B8A-4396-A462-19062B7BE05B}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Push_3" ID="{EE4C2A76-54D2-482F-9A66-51E61540B2F1}" ShortID="721504824">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SubwayJam_SFX-090" ID="{523FFD35-4D41-4B31-BCF3-8C0661AD9737}">
-											<Language>SFX</Language>
-											<AudioFile>SubwayJam_SFX-090.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1026066387"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SubwayJam_SFX-090" ID="{523FFD35-4D41-4B31-BCF3-8C0661AD9737}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Push_4" ID="{EC77FFC7-6B8A-4FA1-BEC5-5A9A6C4E82B3}" ShortID="158208395">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SubwayJam_SFX-091" ID="{F2D42EA4-4AB1-4214-A037-7AE489DE8B2C}">
-											<Language>SFX</Language>
-											<AudioFile>SubwayJam_SFX-091.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="990015230"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SubwayJam_SFX-091" ID="{F2D42EA4-4AB1-4214-A037-7AE489DE8B2C}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="Environment" ID="{BA04E1AC-0E47-4CF6-813A-68FA5CCC33C1}" ShortID="152063240">
-					<ChildrenList>
-						<Sound Name="Door_Open" ID="{01D3ACE9-E713-4F69-AEBB-CA6F205579F2}" ShortID="430772761">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-								</Reference>
-								<Reference Name="UserAuxSend0">
-									<ObjectRef Name="Reverb" ID="{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="SubwayJam_SFX-078" ID="{DD65D38D-2671-4B9A-9968-0BE8E406ED65}">
-									<Language>SFX</Language>
-									<AudioFile>SubwayJam_SFX-078.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="106480371"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="SubwayJam_SFX-078" ID="{DD65D38D-2671-4B9A-9968-0BE8E406ED65}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Door_Close" ID="{ACB85CD9-E735-4208-BC5B-13154733567A}" ShortID="322210149">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="SubwayJam_SFX-087" ID="{053A5C25-C0D6-46AE-92EC-14BD3C24A508}">
-									<Language>SFX</Language>
-									<AudioFile>SubwayJam_SFX-087.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="83805436"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="SubwayJam_SFX-087" ID="{053A5C25-C0D6-46AE-92EC-14BD3C24A508}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-				</Folder>
-				<RandomSequenceContainer Name="Footsteps" ID="{9C0DB1DF-68BA-4EFE-BA3E-9FC108BD5061}" ShortID="896496255">
-					<PropertyList>
-						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-						<Property Name="Pitch" Type="int32">
-							<ModifierList>
-								<ModifierInfo>
-									<Modifier Name="" ID="{A796DA9E-C9A9-4069-87B1-06F6DB24FB86}">
-										<PropertyList>
-											<Property Name="Max" Type="Real64" Value="10"/>
-											<Property Name="Min" Type="Real64" Value="-10"/>
-										</PropertyList>
-									</Modifier>
-								</ModifierInfo>
-							</ModifierList>
-						</Property>
-						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-						</Reference>
-						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="Reverb" ID="{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="Footstep_Walk_01" ID="{CF393F99-8A47-494B-9152-231A2474BDDC}" ShortID="624705588">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="SubwayJam_SFX-067" ID="{6A58F444-D633-48C9-B016-11CC8D96D5F9}">
-									<Language>SFX</Language>
-									<AudioFile>SubwayJam_SFX-067.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="766860928"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="SubwayJam_SFX-067" ID="{6A58F444-D633-48C9-B016-11CC8D96D5F9}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Footstep_Walk_02" ID="{B0E83192-18AD-4E39-84FD-03C7B48AFC29}" ShortID="1073458969">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="SubwayJam_SFX-068" ID="{3A5888EE-3DF7-46B3-98AB-F0DEDC1F33C2}">
-									<Language>SFX</Language>
-									<AudioFile>SubwayJam_SFX-068.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="205447867"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="SubwayJam_SFX-068" ID="{3A5888EE-3DF7-46B3-98AB-F0DEDC1F33C2}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Footstep_Walk_03" ID="{EA27B79F-BC62-43A7-89EE-47B980B86667}" ShortID="206158527">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="SubwayJam_SFX-069" ID="{D384345C-11D5-47C6-8247-04703E16101B}">
-									<Language>SFX</Language>
-									<AudioFile>SubwayJam_SFX-069.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="276369504"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="SubwayJam_SFX-069" ID="{D384345C-11D5-47C6-8247-04703E16101B}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Footstep_Walk_04" ID="{8FE5B9FC-F23A-4027-BAE8-3847382130DF}" ShortID="4664385">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="SubwayJam_SFX-070" ID="{AA00874C-9E79-4A6C-B60D-BC48674457E5}">
-									<Language>SFX</Language>
-									<AudioFile>SubwayJam_SFX-070.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="555209315"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="SubwayJam_SFX-070" ID="{AA00874C-9E79-4A6C-B60D-BC48674457E5}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Footstep_Walk_05" ID="{AB884A89-C6F5-4133-B952-887D518D544D}" ShortID="602850925">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="SubwayJam_SFX-071" ID="{7DB678BE-1E6D-4F78-B1D9-A44EEFAC7596}">
-									<Language>SFX</Language>
-									<AudioFile>SubwayJam_SFX-071.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="874895551"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="SubwayJam_SFX-071" ID="{7DB678BE-1E6D-4F78-B1D9-A44EEFAC7596}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Footstep_Walk_06" ID="{A8984DFB-F3CB-4B6A-8C4E-02007CA8369D}" ShortID="719985342">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="SubwayJam_SFX-072" ID="{F4EF3ECA-D329-4B34-AE84-0CC8D5CC66E2}">
-									<Language>SFX</Language>
-									<AudioFile>SubwayJam_SFX-072.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="521592844"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="SubwayJam_SFX-072" ID="{F4EF3ECA-D329-4B34-AE84-0CC8D5CC66E2}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Footstep_Walk_07" ID="{8E30C55B-EE0E-447C-99B0-75EA241D1F10}" ShortID="203286941">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="SubwayJam_SFX-073" ID="{EB945D69-503D-47DA-B4FE-B8BB384292C3}">
-									<Language>SFX</Language>
-									<AudioFile>SubwayJam_SFX-073.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="182984018"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="SubwayJam_SFX-073" ID="{EB945D69-503D-47DA-B4FE-B8BB384292C3}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

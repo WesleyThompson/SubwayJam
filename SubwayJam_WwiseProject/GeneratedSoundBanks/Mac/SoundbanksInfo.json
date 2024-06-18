@@ -18,21 +18,11 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{751709C1-BAF1-193D-AB3C-69E88EAE800F}",
+    "Hash": "{DA2EDB5F-7291-B5F1-E822-5853E4AEDCB1}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
-     "ShareSets": [
-      {
-       "Id": "2265839006",
-       "Name": "Not_A_Yellow_Submarine",
-       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Claustrophobia\\Not_A_Yellow_Submarine",
-       "GUID": "{B5719071-C58D-49FA-8766-B1D986D017EC}",
-       "LibName": "Wwise RoomVerb",
-       "LibId": "7733251"
-      }
-     ],
      "AudioDevices": [
       {
        "Id": "2317455096",
@@ -58,21 +48,6 @@
       "Name": "Master Audio Bus",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
-     }
-    ],
-    "AuxBusses": [
-     {
-      "Id": "348963605",
-      "Name": "Reverb",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
-      "GUID": "{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}",
-      "PluginRefs": {
-       "ShareSets": [
-        {
-         "Id": "2265839006"
-        }
-       ]
-      }
      }
     ],
     "GameParameters": [
@@ -114,140 +89,12 @@
     "Type": "User",
     "GUID": "{91238402-E37E-4047-B3F7-05E61A95ED03}",
     "Language": "SFX",
-    "Hash": "{1F8E5154-A122-1F7A-EB15-813C4BAAC9E5}",
+    "Hash": "{73D2F82E-3C9A-353F-4F7A-B26E8573544B}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
-    "Path": "Master.bnk",
-    "Media": [
-     {
-      "Id": "182984018",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "SubwayJam_SFX-073.wav",
-      "CachePath": "SFX/SubwayJam_SFX-073_10C4C929.wem"
-     },
-     {
-      "Id": "205447867",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "SubwayJam_SFX-068.wav",
-      "CachePath": "SFX/SubwayJam_SFX-068_10C4C929.wem"
-     },
-     {
-      "Id": "276369504",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "SubwayJam_SFX-069.wav",
-      "CachePath": "SFX/SubwayJam_SFX-069_10C4C929.wem"
-     },
-     {
-      "Id": "521592844",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "SubwayJam_SFX-072.wav",
-      "CachePath": "SFX/SubwayJam_SFX-072_10C4C929.wem"
-     },
-     {
-      "Id": "555209315",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "SubwayJam_SFX-070.wav",
-      "CachePath": "SFX/SubwayJam_SFX-070_10C4C929.wem"
-     },
-     {
-      "Id": "766860928",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "SubwayJam_SFX-067.wav",
-      "CachePath": "SFX/SubwayJam_SFX-067_10C4C929.wem"
-     },
-     {
-      "Id": "874895551",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "SubwayJam_SFX-071.wav",
-      "CachePath": "SFX/SubwayJam_SFX-071_10C4C929.wem"
-     },
-     {
-      "Id": "878741372",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "SubwayJam_SFX-021.wav",
-      "CachePath": "SFX/SubwayJam_SFX-021_D79FB2B7.wem"
-     }
-    ],
-    "Events": [
-     {
-      "Id": "278617630",
-      "Name": "Play_Ambience",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_Ambience",
-      "GUID": "{8B926483-FB57-4B64-9ECC-E66678213C51}",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "878741372"
-       }
-      ],
-      "AuxBusRefs": [
-       {
-        "Id": "348963605",
-        "Name": "Reverb",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
-        "GUID": "{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}"
-       }
-      ]
-     },
-     {
-      "Id": "3854155799",
-      "Name": "Play_Footsteps",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_Footsteps",
-      "GUID": "{72053ECC-DB2B-4754-95DC-82472937336B}",
-      "DurationType": "OneShot",
-      "DurationMin": "0.22166666",
-      "DurationMax": "0.28233334",
-      "MediaRefs": [
-       {
-        "Id": "182984018"
-       },
-       {
-        "Id": "205447867"
-       },
-       {
-        "Id": "276369504"
-       },
-       {
-        "Id": "521592844"
-       },
-       {
-        "Id": "555209315"
-       },
-       {
-        "Id": "766860928"
-       },
-       {
-        "Id": "874895551"
-       }
-      ],
-      "AuxBusRefs": [
-       {
-        "Id": "348963605",
-        "Name": "Reverb",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
-        "GUID": "{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}"
-       }
-      ]
-     }
-    ]
+    "Path": "Master.bnk"
    }
   ],
-  "FileHash": "{05942386-E996-519A-CC9C-34C9C99DE92A}"
+  "FileHash": "{3DD0F139-5BA1-FD18-D69B-E2053C53FB20}"
  }
 }
