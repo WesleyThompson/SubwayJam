@@ -1,0 +1,36 @@
+{
+ "ProjectInfo": {
+  "Project": {
+   "Name": "SubwayJam_WwiseProject",
+   "GUID": "{CE3CC9EB-71E0-4935-8BFD-405BB9E32FE4}",
+   "Generator": "2022.1.11.8414"
+  },
+  "CacheRoot": "../.cache",
+  "Platforms": [
+   {
+    "Name": "Mac",
+    "GUID": "{AA3C0E71-80AF-48E7-8E0E-C2CECAA69969}",
+    "BasePlatform": "Mac",
+    "BasePlatformGUID": "{9C6217D5-DD11-4795-87C1-6CE02853C540}",
+    "Path": "Mac"
+   },
+   {
+    "Name": "Windows",
+    "GUID": "{F14C1463-F6B4-4F61-9343-7EF7EF998804}",
+    "BasePlatform": "Windows",
+    "BasePlatformGUID": "{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}",
+    "Path": "Windows"
+   }
+  ],
+  "Languages": [
+   {
+    "Name": "English(US)",
+    "Id": "684519430",
+    "GUID": "{3D5594A4-2029-43A4-BFCB-B8567D1996D8}",
+    "Default": "true",
+    "UseAsStandIn": "true"
+   }
+  ],
+  "FileHash": "{A63A8220-FBC6-F9C3-C325-9387EFBA9D9B}"
+ }
+}

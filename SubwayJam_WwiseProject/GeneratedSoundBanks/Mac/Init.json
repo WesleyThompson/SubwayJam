@@ -1,0 +1,82 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "Type": "User",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "Hash": "{DA2EDB5F-7291-B5F1-E822-5853E4AEDCB1}",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk",
+    "Plugins": {
+     "AudioDevices": [
+      {
+       "Id": "2317455096",
+       "Name": "No_Output",
+       "ObjectPath": "\\Audio Devices\\Default Work Unit\\No_Output",
+       "GUID": "{52C42B94-2FDA-4223-A4DB-D6EF572A357D}",
+       "LibName": "No Output",
+       "LibId": "11862023"
+      },
+      {
+       "Id": "3859886410",
+       "Name": "System",
+       "ObjectPath": "\\Audio Devices\\Default Work Unit\\System",
+       "GUID": "{7BCAC76B-1B7B-4643-A993-E27DC051A545}",
+       "LibName": "System",
+       "LibId": "11403271"
+      }
+     ]
+    },
+    "Busses": [
+     {
+      "Id": "3803692087",
+      "Name": "Master Audio Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
+      "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "3407546846",
+      "Name": "Walking_Running",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Walking_Running",
+      "GUID": "{AF6C6AE8-6459-4F64-9160-9C7A12AC42D5}"
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "2385628198",
+      "Name": "Footsteps",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps",
+      "GUID": "{A320CEB1-4193-424A-BFD3-B56B7D052538}",
+      "GameParameterRef": {
+       "Id": "3407546846"
+      },
+      "Switches": [
+       {
+        "Id": "340271938",
+        "Name": "Walking",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps\\Walking",
+        "GUID": "{02424B7A-927F-4324-BCC2-6191D1B36953}"
+       },
+       {
+        "Id": "3863236874",
+        "Name": "Running",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps\\Running",
+        "GUID": "{BCA76798-E67D-4B54-A06C-E714A3FBB0A9}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{A017FBEA-0E80-6209-AAB1-A3AF1E08CDE8}"
+ }
+}
