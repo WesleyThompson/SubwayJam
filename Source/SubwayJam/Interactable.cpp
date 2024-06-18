@@ -2,7 +2,8 @@
 
 
 #include "Interactable.h"
-#include "Engine/TriggerSphere.h"
+
+#include "Components/SphereComponent.h"
 
 // Sets default values for this component's properties
 UInteractable::UInteractable()
@@ -44,7 +45,14 @@ void UInteractable::Interact()
 		else
 		{
 			HasInteracted = true;
-			TriggerSphere->SetActorEnableCollision(false);
+			if(TriggerSphere != nullptr)
+			{
+				TriggerSphere->SetGenerateOverlapEvents(false);
+			}
+			else
+			{
+				UE_LOG(LogTemp, Warning, TEXT("Missing TriggerSphere."));
+			}
 		}
 	}
 

@@ -6,8 +6,7 @@
 #include "Components/ActorComponent.h"
 #include "Interactable.generated.h"
 
-
-class ATriggerSphere;
+class USphereComponent;
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnInteractSignature);
 
@@ -22,7 +21,7 @@ public:
 
 protected:
 	UPROPERTY(EditAnywhere)
-	ATriggerSphere* TriggerSphere;
+	USphereComponent* TriggerSphere;
 
 	UPROPERTY(EditAnywhere)
 	bool IsSingleUse;
@@ -34,6 +33,7 @@ public:
 	UPROPERTY(BlueprintAssignable)
 	FOnInteractSignature OnInteractDelegate;
 
+	UFUNCTION(BlueprintCallable)
 	void Interact();
 	
 	// Called every frame
