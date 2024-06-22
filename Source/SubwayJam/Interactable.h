@@ -20,11 +20,11 @@ public:
 	UInteractable();
 
 protected:
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere)
 	USphereComponent* TriggerSphere;
 
 	UPROPERTY(EditAnywhere)
-	bool IsSingleUse;
+	bool IsSingleUse = false;
 	
 	// Called when the game starts
 	virtual void BeginPlay() override;

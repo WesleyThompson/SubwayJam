@@ -10,9 +10,6 @@ UInteractable::UInteractable()
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
-
-	TriggerSphere = CreateDefaultSubobject<USphereComponent>(TEXT("Trigger Sphere"));
-	//TriggerSphere->SetupAttachment(GetOwner()->GetRootComponent());
 }
 
 
@@ -47,7 +44,9 @@ void UInteractable::Interact()
 			HasInteracted = true;
 			if(TriggerSphere != nullptr)
 			{
+				UE_LOG(LogTemp, Display, TEXT("Turning off overlap events on %s."), *TriggerSphere->GetName());
 				TriggerSphere->SetGenerateOverlapEvents(false);
+				TriggerSphere->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 			}
 			else
 			{
