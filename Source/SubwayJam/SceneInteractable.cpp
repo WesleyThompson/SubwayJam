@@ -1,40 +1,39 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "Interactable.h"
+#include "SceneInteractable.h"
+
 #include "Components/SphereComponent.h"
 
 // Sets default values for this component's properties
-UInteractable::UInteractable()
+USceneInteractable::USceneInteractable()
 {
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
 
-	TriggerSphere = CreateDefaultSubobject<USphereComponent>(TEXT("Trigger Sphere"));
-	//TriggerSphere->SetupAttachment(GetOwner()->GetRootComponent());
+	TriggerSphereComp = CreateDefaultSubobject<USphereComponent>(TEXT("TriggerSphere"));
 }
 
 
 // Called when the game starts
-void UInteractable::BeginPlay()
+void USceneInteractable::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// ...
-	
+	TriggerSphereComp->SetupAttachment(GetOwner()->GetRootComponent());
 }
 
 
 // Called every frame
-void UInteractable::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
+void USceneInteractable::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
 	// ...
 }
 
-void UInteractable::Interact()
+void USceneInteractable::Interact()
 {
 	if(IsSingleUse)
 	{
@@ -45,9 +44,9 @@ void UInteractable::Interact()
 		else
 		{
 			HasInteracted = true;
-			if(TriggerSphere != nullptr)
+			if(TriggerSphereComp != nullptr)
 			{
-				TriggerSphere->SetGenerateOverlapEvents(false);
+				TriggerSphereComp->SetGenerateOverlapEvents(false);
 			}
 			else
 			{

@@ -3,35 +3,35 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
-#include "Interactable.generated.h"
+#include "Components/SceneComponent.h"
+#include "SceneInteractable.generated.h"
+
 
 class USphereComponent;
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnInteractSignature);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnInteractedSignature);
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
-class SUBWAYJAM_API UInteractable : public UActorComponent
+class SUBWAYJAM_API USceneInteractable : public USceneComponent
 {
 	GENERATED_BODY()
 
-public:
+public:	
 	// Sets default values for this component's properties
-	UInteractable();
+	USceneInteractable();
 
 protected:
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
-	USphereComponent* TriggerSphere;
-
-	UPROPERTY(EditAnywhere)
-	bool IsSingleUse;
-	
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
+	UPROPERTY(EditAnywhere)
+	bool IsSingleUse = false;
+
+	UPROPERTY(EditAnywhere)
+	USphereComponent* TriggerSphereComp;
 public:
 	UPROPERTY(BlueprintAssignable)
-	FOnInteractSignature OnInteractDelegate;
+	FOnInteractedSignature OnInteractDelegate;
 
 	UFUNCTION(BlueprintCallable)
 	void Interact();
@@ -40,6 +40,5 @@ public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
 private:
-	bool HasInteracted = false;	
-		
+	bool HasInteracted = false;
 };
