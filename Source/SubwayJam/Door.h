@@ -3,45 +3,56 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+#include "Interactable.h"
 #include "Door.generated.h"
 
 class USoundBase;
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
-class SUBWAYJAM_API UDoor : public UActorComponent
+class SUBWAYJAM_API UDoor : public UInteractable
 {
 	GENERATED_BODY()
 
-public:	
+public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UStaticMeshComponent* DoorMesh;
 	// Sets default values for this component's properties
 	UDoor();
-
+	
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
+	
 
 public:
 	UPROPERTY(EditAnywhere)
 	bool Locked = false;
 	UPROPERTY(EditAnywhere)
-	FVector OpenPosition;
+	FVector OpenOffset;
 	UPROPERTY(EditAnywhere)
-	FVector ClosedPosition;
-	UPROPERTY(EditAnywhere)
-	float MoveSpeed;
+	float MoveTime;
 	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+	UFUNCTION()
 	void OpenDoor();
+	UFUNCTION()
 	void CloseDoor();
 
 private:
+	void DoorStateCheck();
+	
 	UPROPERTY(EditAnywhere)
 	USoundBase* OpenSound;
 	UPROPERTY(EditAnywhere)
 	USoundBase* CloseSound;
-	
-	FVector CurrentPosition;
-	
+
+	FVector OpenLocation;
+	FVector StartLocation;
+	//Location where the door should move to.
+	FVector TargetLocation;
+	//Controls whether the door will be moving towards it's TargetLocation.
+	bool ShouldMove = false;
+	bool isOpen = false;
+	float MoveSpeed;
 };

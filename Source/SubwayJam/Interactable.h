@@ -16,13 +16,12 @@ class SUBWAYJAM_API UInteractable : public UActorComponent
 	GENERATED_BODY()
 
 public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	USphereComponent* TriggerSphere;
 	// Sets default values for this component's properties
 	UInteractable();
 
 protected:
-	UPROPERTY(EditAnywhere)
-	USphereComponent* TriggerSphere;
-
 	UPROPERTY(EditAnywhere)
 	bool IsSingleUse = false;
 	
