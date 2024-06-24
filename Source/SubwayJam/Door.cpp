@@ -5,6 +5,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "Math/UnrealMathUtility.h"
 #include "Sound/SoundBase.h"
+#include "TimerManager.h"
 
 // Sets default values for this component's properties
 UDoor::UDoor()
@@ -64,6 +65,11 @@ void UDoor::OpenDoor()
 
 	TargetLocation = OpenLocation;
 	ShouldMove = true;
+
+	if(AutoClose)
+	{
+		GetWorld()->GetTimerManager().SetTimer(CloseTimerHandle, this, &UDoor::CloseDoor, CloseDelay, false);
+	}
 }
 
 void UDoor::CloseDoor()

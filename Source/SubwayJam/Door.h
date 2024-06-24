@@ -22,9 +22,13 @@ public:
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
+	UPROPERTY(EditAnywhere)
+	float CloseDelay;
 	
 
 public:
+	UPROPERTY(EditAnywhere)
+	bool AutoClose = false;
 	UPROPERTY(EditAnywhere)
 	bool Locked = false;
 	UPROPERTY(EditAnywhere)
@@ -55,4 +59,5 @@ private:
 	bool ShouldMove = false;
 	bool isOpen = false;
 	float MoveSpeed;
+	FTimerHandle CloseTimerHandle;
 };
