@@ -8,19 +8,99 @@
 						<Action Name="" ID="{13EDA09B-698D-4604-85B7-9A2AF9443B03}" ShortID="691425393">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Footsteps" ID="{EAA40347-F011-4A14-8907-F0300F65A019}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+									<ObjectRef Name="Footsteps" ID="{9C0DB1DF-68BA-4EFE-BA3E-9FC108BD5061}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Music" ID="{CA80A137-A31F-4910-B231-70317A8827DE}"/>
+				<Event Name="Play_Music" ID="{CA80A137-A31F-4910-B231-70317A8827DE}">
+					<ChildrenList>
+						<Action Name="" ID="{90CC40B7-D20D-4178-84D3-77C1EC77F565}" ShortID="8804327">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_System" ID="{E31D92B9-67B7-461F-B3A9-6EAFE7305C10}" WorkUnitID="{F0CAAC52-2570-48B4-88CF-1697D4707EE1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="Play_Ambience" ID="{8B926483-FB57-4B64-9ECC-E66678213C51}">
 					<ChildrenList>
 						<Action Name="" ID="{172BF32F-15D1-4E4A-8BE3-55DB283D9E95}" ShortID="555558523">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Ambience_1" ID="{C28D52D2-6D01-4B6E-A1D7-6F318D045FA4}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="UI" ID="{E7BC53B8-C690-461A-AA57-81040CCEED68}" ShortID="797260821">
+					<ChildrenList>
+						<Event Name="UI_StartGame" ID="{99EB72A3-4E25-4246-9F73-2153AB18E888}">
+							<ChildrenList>
+								<Action Name="" ID="{E3D4D4E1-CE14-4556-89D7-12E03F225869}" ShortID="231321962">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_StartGame" ID="{3D8060C6-D7C7-4789-BA57-F3771490A9B5}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="UI_Click" ID="{09F1CAD4-6A28-4F6D-A56B-AD0300C3AE7C}">
+							<ChildrenList>
+								<Action Name="" ID="{6863EF43-A2E2-4C94-B498-48FB7A8F8802}" ShortID="152761553">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Click" ID="{411002A3-66FE-47D1-A67D-894289E2BEFD}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="UI_Accept" ID="{7E618E16-6523-4B1A-8A6B-3F832112B199}">
+							<ChildrenList>
+								<Action Name="" ID="{8C13018F-1B8C-44CE-A9D7-6FB53A0C4F66}" ShortID="970932528">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Accept" ID="{39F2F446-F5FB-4877-BBF8-29E33767DA1E}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Open_Door" ID="{07DD551E-72D5-4502-9ACB-355CEF2C2F02}">
+					<ChildrenList>
+						<Action Name="" ID="{7A82FE5C-1D6D-4866-AF5E-6800E0111B2C}" ShortID="326210024">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Door_Open" ID="{01D3ACE9-E713-4F69-AEBB-CA6F205579F2}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Whisper" ID="{A6EB7C90-9E0A-409C-BF63-EBE95F899647}">
+					<ChildrenList>
+						<Action Name="" ID="{3125F6E5-CC61-47D4-8F9C-BBF95E68B623}" ShortID="834960678">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Scary_Whisper_3" ID="{4673B478-C1BB-47B4-BE37-1D21A75A0C41}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_EnemyAttack" ID="{335890B3-6D54-495F-A169-2A280AF1733B}">
+					<ChildrenList>
+						<Action Name="" ID="{22891C20-3FF3-408C-A24A-3CC82F468496}" ShortID="894107370">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Enemy_Attack" ID="{82BB9474-7F10-4131-978F-2BA3EAF372C9}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
