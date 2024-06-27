@@ -1,0 +1,14 @@
+Event	ID	Name			Wwise Object Path	Notes
+	278617630	Play_Ambience			\Default Work Unit\Play_Ambience	
+	3854155799	Play_Footsteps			\Default Work Unit\Play_Footsteps	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	182984018	Footstep_Walk_07	C:\Git\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-073_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footstep_Walk_07		27200
+	205447867	Footstep_Walk_02	C:\Git\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-068_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footstep_Walk_02		22690
+	276369504	Footstep_Walk_03	C:\Git\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-069_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footstep_Walk_03		21376
+	521592844	Footstep_Walk_06	C:\Git\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-072_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footstep_Walk_06		23654
+	555209315	Footstep_Walk_04	C:\Git\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-070_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footstep_Walk_04		22274
+	766860928	Footstep_Walk_01	C:\Git\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-067_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footstep_Walk_01		21822
+	874895551	Footstep_Walk_05	C:\Git\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-071_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footstep_Walk_05		25822
+	878741372	Ambience_1	C:\Git\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-021_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\Ambience_1		21314752
+

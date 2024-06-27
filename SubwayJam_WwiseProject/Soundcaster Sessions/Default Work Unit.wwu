@@ -18,6 +18,10 @@
 							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Enemy_Attack" ID="{82BB9474-7F10-4131-978F-2BA3EAF372C9}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Scary_Whisper_3" ID="{4673B478-C1BB-47B4-BE37-1D21A75A0C41}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -36,6 +40,10 @@
 						<Module>
 							<ObjectRef Name="UI_Click" ID="{411002A3-66FE-47D1-A67D-894289E2BEFD}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
 							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Footsteps" ID="{9C0DB1DF-68BA-4EFE-BA3E-9FC108BD5061}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+							<Position X="2" Y="2"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
