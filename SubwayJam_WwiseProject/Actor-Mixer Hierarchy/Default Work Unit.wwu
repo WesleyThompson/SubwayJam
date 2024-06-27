@@ -117,7 +117,7 @@
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-8</Value>
+										<Value>-10</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -160,6 +160,11 @@
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -273,7 +278,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-9</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -331,28 +336,6 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="SubwayJam_SFX-082" ID="{17A247CF-7983-40F8-A10A-67407CD76BCD}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Player_Hurt4" ID="{3A9DFF1B-A6E6-46D5-8340-27D485410FC6}" ShortID="884767426">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SubwayJam_SFX-083" ID="{DA2BFC42-4549-4446-9374-704B6C321D97}">
-											<Language>SFX</Language>
-											<AudioFile>SubwayJam_SFX-083.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="128632236"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SubwayJam_SFX-083" ID="{DA2BFC42-4549-4446-9374-704B6C321D97}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
