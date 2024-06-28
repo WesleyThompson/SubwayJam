@@ -106,6 +106,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Close_Door" ID="{7AEBF64B-7726-4E1E-8596-7CB6250AEAE5}">
+					<ChildrenList>
+						<Action Name="" ID="{9F91A515-676A-4003-BB65-87EC438122AD}" ShortID="839112015">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Door_Close" ID="{ACB85CD9-E735-4208-BC5B-13154733567A}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_Hurt" ID="{532ECB46-FC93-4119-8854-4A5B8AC937F2}">
+					<ChildrenList>
+						<Action Name="" ID="{479883EC-6A2B-4D41-B9B1-3909AFBF881D}" ShortID="108814756">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Hurt" ID="{86CB504C-C8AC-4C52-8E09-3DE379A9A9C9}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_Push" ID="{F6EA65C6-4359-456D-9C36-7FFB4C9DFEA4}">
+					<ChildrenList>
+						<Action Name="" ID="{5945CC5C-AC26-4136-AEDA-C2CCBCA78441}" ShortID="293909645">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Push" ID="{F3DD40DC-497D-4F7F-B16C-754FA2C51E13}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
