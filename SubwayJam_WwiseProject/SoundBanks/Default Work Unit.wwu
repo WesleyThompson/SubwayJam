@@ -5,8 +5,30 @@
 			<ChildrenList>
 				<SoundBank Name="Master" ID="{91238402-E37E-4047-B3F7-05E61A95ED03}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_Whisper" ID="{A6EB7C90-9E0A-409C-BF63-EBE95F899647}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Player_Hurt" ID="{7A0C28FE-D3B6-409D-84EC-B3C6DC2E3095}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Player_Death_Lose" ID="{964561DB-3C70-40EC-8218-E00D0D00C84D}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Player_Hurt_01" ID="{532ECB46-FC93-4119-8854-4A5B8AC937F2}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Close_Door_01" ID="{1E66AB9D-5242-41A1-9FBA-3538F3801972}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="UI_StartGame" ID="{99EB72A3-4E25-4246-9F73-2153AB18E888}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Open_Door" ID="{07DD551E-72D5-4502-9ACB-355CEF2C2F02}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Player_Push" ID="{F6EA65C6-4359-456D-9C36-7FFB4C9DFEA4}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Open_Door_01" ID="{AA76BF0A-9422-4669-870A-532A614A272B}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Footsteps" ID="{72053ECC-DB2B-4754-95DC-82472937336B}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Whisper" ID="{3ACEC741-0731-48E3-AE6A-65E16B4D180B}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_EnemyAttack_01" ID="{D56E4044-7CE4-48FB-AFCA-4F065A3619A0}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_MenuMusic" ID="{CA80A137-A31F-4910-B231-70317A8827DE}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_EnemyAttack" ID="{335890B3-6D54-495F-A169-2A280AF1733B}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Whisper_01" ID="{F0A10EA5-539F-4975-8035-E265F4467810}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="UI_Accept_01" ID="{E547B499-4D3E-49AA-84D0-277FE6674C20}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="UI_StartGame_01" ID="{B6A81689-0EA1-49DA-B77F-DD810DA52420}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="UI_Accept" ID="{7E618E16-6523-4B1A-8A6B-3F832112B199}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_TrainAmbience" ID="{8B926483-FB57-4B64-9ECC-E66678213C51}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_HospitalAmbience_Win" ID="{4FB4CA8F-594C-4B8D-9843-36BE5AB2F4B7}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="UI_Click_01" ID="{AFA9E88F-4967-4DDE-AC46-C60E5C21C8BD}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Close_Door" ID="{7AEBF64B-7726-4E1E-8596-7CB6250AEAE5}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Player_Push_01" ID="{3E248CE3-E528-4F30-83EA-E7E3D968E5C4}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="UI_Click" ID="{09F1CAD4-6A28-4F6D-A56B-AD0300C3AE7C}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

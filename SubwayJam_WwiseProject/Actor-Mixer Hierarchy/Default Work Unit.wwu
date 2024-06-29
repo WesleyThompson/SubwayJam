@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<Folder Name="Ambiences" ID="{6188AEDA-C57E-408F-8E35-5BB4037BFFF7}" ShortID="527255770">
 					<ChildrenList>
+						<Sound Name="Train_Ambience_1" ID="{C28D52D2-6D01-4B6E-A1D7-6F318D045FA4}" ShortID="76539276">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Lowpass" Type="int16">
@@ -19,9 +20,6 @@
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-								</Reference>
-								<Reference Name="UserAuxSend0">
-									<ObjectRef Name="Reverb" ID="{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -147,6 +145,11 @@
 						<Sound Name="Scary_Whisper_3" ID="{4673B478-C1BB-47B4-BE37-1D21A75A0C41}" ShortID="279670595">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>42</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-10</Value>
@@ -166,6 +169,10 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="SubwayJam_SFX-079" ID="{613E9EF9-7F8E-4E53-B5B3-DC42584334BD}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="1.97088133802817"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>SubwayJam_SFX-079.wav</AudioFile>
 									<MediaIDList>
@@ -179,6 +186,19 @@
 						</Sound>
 						<RandomSequenceContainer Name="Enemy_Attack" ID="{82BB9474-7F10-4131-978F-2BA3EAF372C9}" ShortID="527491423">
 							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{1114FC37-A162-40B7-A679-CB3918C6986C}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="10"/>
+													<Property Name="Min" Type="Real64" Value="-10"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>

@@ -1,14 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="4056684167" Type="User" GUID="{91238402-E37E-4047-B3F7-05E61A95ED03}" Language="SFX" Hash="{1F8E5154-A122-1F7A-EB15-813C4BAAC9E5}">
+		<SoundBank Id="4056684167" Type="User" GUID="{91238402-E37E-4047-B3F7-05E61A95ED03}" Language="SFX" Hash="{B11645F0-3410-5711-DAEC-0EF3A96DE6B8}">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<Media>
+				<File Id="83805436" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SubwayJam_SFX-087.wav</ShortName>
+					<CachePath>SFX/SubwayJam_SFX-087_10C4C929.wem</CachePath>
+				</File>
+				<File Id="106480371" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SubwayJam_SFX-078.wav</ShortName>
+					<CachePath>SFX/SubwayJam_SFX-078_10C4C929.wem</CachePath>
+				</File>
+				<File Id="142240528" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SubwayJam_SFX-088.wav</ShortName>
+					<CachePath>SFX/SubwayJam_SFX-088_10C4C929.wem</CachePath>
+				</File>
+				<File Id="146943196" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SubwayJam_SFX-084.wav</ShortName>
+					<CachePath>SFX/SubwayJam_SFX-084_10C4C929.wem</CachePath>
+				</File>
 				<File Id="182984018" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SubwayJam_SFX-073.wav</ShortName>
 					<CachePath>SFX/SubwayJam_SFX-073_10C4C929.wem</CachePath>
+				</File>
+				<File Id="195761095" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MenuMusic-001.wav</ShortName>
+					<CachePath>SFX/MenuMusic-001_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="205447867" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SubwayJam_SFX-068.wav</ShortName>
@@ -18,6 +38,26 @@
 					<ShortName>SubwayJam_SFX-069.wav</ShortName>
 					<CachePath>SFX/SubwayJam_SFX-069_10C4C929.wem</CachePath>
 				</File>
+				<File Id="280858463" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SubwayJam_SFX-096.wav</ShortName>
+					<CachePath>SFX/SubwayJam_SFX-096_CB8E5662.wem</CachePath>
+				</File>
+				<File Id="281704824" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SubwayJam_SFX-095.wav</ShortName>
+					<CachePath>SFX/SubwayJam_SFX-095_10C4C929.wem</CachePath>
+				</File>
+				<File Id="295889543" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SubwayJam_SFX-077.wav</ShortName>
+					<CachePath>SFX/SubwayJam_SFX-077_10C4C929.wem</CachePath>
+				</File>
+				<File Id="448944935" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SubwayJam_SFX-092.wav</ShortName>
+					<CachePath>SFX/SubwayJam_SFX-092_10C4C929.wem</CachePath>
+				</File>
+				<File Id="497642096" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SubwayJam_SFX-075.wav</ShortName>
+					<CachePath>SFX/SubwayJam_SFX-075_10C4C929.wem</CachePath>
+				</File>
 				<File Id="521592844" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SubwayJam_SFX-072.wav</ShortName>
 					<CachePath>SFX/SubwayJam_SFX-072_10C4C929.wem</CachePath>
@@ -26,9 +66,37 @@
 					<ShortName>SubwayJam_SFX-070.wav</ShortName>
 					<CachePath>SFX/SubwayJam_SFX-070_10C4C929.wem</CachePath>
 				</File>
+				<File Id="600472025" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SubwayJam_SFX-079.wav</ShortName>
+					<CachePath>SFX/SubwayJam_SFX-079_10EE7A29.wem</CachePath>
+				</File>
+				<File Id="736572253" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SubwayJam_SFX-074.wav</ShortName>
+					<CachePath>SFX/SubwayJam_SFX-074_10C4C929.wem</CachePath>
+				</File>
 				<File Id="766860928" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SubwayJam_SFX-067.wav</ShortName>
 					<CachePath>SFX/SubwayJam_SFX-067_10C4C929.wem</CachePath>
+				</File>
+				<File Id="772691773" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SubwayJam_SFX-093.wav</ShortName>
+					<CachePath>SFX/SubwayJam_SFX-093_10C4C929.wem</CachePath>
+				</File>
+				<File Id="779934013" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SubwayJam_SFX-089.wav</ShortName>
+					<CachePath>SFX/SubwayJam_SFX-089_10C4C929.wem</CachePath>
+				</File>
+				<File Id="782592832" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SubwayJam_SFX-085.wav</ShortName>
+					<CachePath>SFX/SubwayJam_SFX-085_10C4C929.wem</CachePath>
+				</File>
+				<File Id="792563256" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SubwayJam_SFX-094.wav</ShortName>
+					<CachePath>SFX/SubwayJam_SFX-094_10C4C929.wem</CachePath>
+				</File>
+				<File Id="848260569" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SubwayJam_SFX-086.wav</ShortName>
+					<CachePath>SFX/SubwayJam_SFX-086_10C4C929.wem</CachePath>
 				</File>
 				<File Id="874895551" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SubwayJam_SFX-071.wav</ShortName>
@@ -38,11 +106,61 @@
 					<ShortName>SubwayJam_SFX-021.wav</ShortName>
 					<CachePath>SFX/SubwayJam_SFX-021_D79FB2B7.wem</CachePath>
 				</File>
+				<File Id="903085184" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SubwayJam_SFX-097.wav</ShortName>
+					<CachePath>SFX/SubwayJam_SFX-097_10C4C929.wem</CachePath>
+				</File>
+				<File Id="990015230" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SubwayJam_SFX-091.wav</ShortName>
+					<CachePath>SFX/SubwayJam_SFX-091_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1026066387" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SubwayJam_SFX-090.wav</ShortName>
+					<CachePath>SFX/SubwayJam_SFX-090_10C4C929.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
-				<Event Id="278617630" Name="Play_Ambience" ObjectPath="\Events\Default Work Unit\Play_Ambience" GUID="{8B926483-FB57-4B64-9ECC-E66678213C51}" DurationType="Infinite">
+				<Event Id="1307892918" Name="Close_Door" ObjectPath="\Events\Default Work Unit\Close_Door" GUID="{7AEBF64B-7726-4E1E-8596-7CB6250AEAE5}" DurationType="OneShot" DurationMin="1.5945" DurationMax="1.5945">
 					<MediaRefs>
-						<MediaRef Id="878741372"/>
+						<MediaRef Id="83805436"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3749008708" Name="Close_Door_01" ObjectPath="\Events\Default Work Unit\Close_Door_01" GUID="{1E66AB9D-5242-41A1-9FBA-3538F3801972}" DurationType="OneShot" DurationMin="1.5945" DurationMax="1.5945">
+					<MediaRefs>
+						<MediaRef Id="83805436"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2934549620" Name="Open_Door" ObjectPath="\Events\Default Work Unit\Open_Door" GUID="{07DD551E-72D5-4502-9ACB-355CEF2C2F02}" DurationType="OneShot" DurationMin="3.1806874" DurationMax="3.1806874">
+					<MediaRefs>
+						<MediaRef Id="106480371"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb" GUID="{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="1151532122" Name="Open_Door_01" ObjectPath="\Events\Default Work Unit\Open_Door_01" GUID="{AA76BF0A-9422-4669-870A-532A614A272B}" DurationType="OneShot" DurationMin="3.1806874" DurationMax="3.1806874">
+					<MediaRefs>
+						<MediaRef Id="106480371"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb" GUID="{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="1824944578" Name="Play_EnemyAttack" ObjectPath="\Events\Default Work Unit\Play_EnemyAttack" GUID="{335890B3-6D54-495F-A169-2A280AF1733B}" DurationType="OneShot" DurationMin="2.4881377" DurationMax="6.3471413">
+					<MediaRefs>
+						<MediaRef Id="146943196"/>
+						<MediaRef Id="782592832"/>
+						<MediaRef Id="848260569"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb" GUID="{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="4052363744" Name="Play_EnemyAttack_01" ObjectPath="\Events\Default Work Unit\Play_EnemyAttack_01" GUID="{D56E4044-7CE4-48FB-AFCA-4F065A3619A0}" DurationType="OneShot" DurationMin="2.4881377" DurationMax="6.3471413">
+					<MediaRefs>
+						<MediaRef Id="146943196"/>
+						<MediaRef Id="782592832"/>
+						<MediaRef Id="848260569"/>
 					</MediaRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="348963605" Name="Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb" GUID="{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}"/>
@@ -62,8 +180,109 @@
 						<AuxBusRef Id="348963605" Name="Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb" GUID="{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}"/>
 					</AuxBusRefs>
 				</Event>
+				<Event Id="4159206351" Name="Play_HospitalAmbience_Win" ObjectPath="\Events\Default Work Unit\Ambiences\Play_HospitalAmbience_Win" GUID="{4FB4CA8F-594C-4B8D-9843-36BE5AB2F4B7}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="280858463"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2570041344" Name="Play_MenuMusic" ObjectPath="\Events\Default Work Unit\Play_MenuMusic" GUID="{CA80A137-A31F-4910-B231-70317A8827DE}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="195761095"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2541567472" Name="Play_Whisper" ObjectPath="\Events\Default Work Unit\Play_Whisper" GUID="{A6EB7C90-9E0A-409C-BF63-EBE95F899647}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="600472025"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb" GUID="{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="587135462" Name="Play_Whisper_01" ObjectPath="\Events\Default Work Unit\Play_Whisper_01" GUID="{F0A10EA5-539F-4975-8035-E265F4467810}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="600472025"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb" GUID="{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="334020027" Name="Player_Death_Lose" ObjectPath="\Events\Default Work Unit\Player\Player_Death_Lose" GUID="{964561DB-3C70-40EC-8218-E00D0D00C84D}" DurationType="OneShot" DurationMin="13.947729" DurationMax="13.947729">
+					<MediaRefs>
+						<MediaRef Id="903085184"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1068092414" Name="Player_Hurt" ObjectPath="\Events\Default Work Unit\Player_Hurt" GUID="{7A0C28FE-D3B6-409D-84EC-B3C6DC2E3095}" DurationType="OneShot" DurationMin="0.2716588" DurationMax="0.5086968">
+					<MediaRefs>
+						<MediaRef Id="281704824"/>
+						<MediaRef Id="448944935"/>
+						<MediaRef Id="772691773"/>
+						<MediaRef Id="792563256"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb" GUID="{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="2613236108" Name="Player_Hurt_01" ObjectPath="\Events\Default Work Unit\Player\Player_Hurt_01" GUID="{532ECB46-FC93-4119-8854-4A5B8AC937F2}" DurationType="OneShot" DurationMin="0.2716588" DurationMax="0.5086968">
+					<MediaRefs>
+						<MediaRef Id="281704824"/>
+						<MediaRef Id="448944935"/>
+						<MediaRef Id="772691773"/>
+						<MediaRef Id="792563256"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb" GUID="{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="4237746237" Name="Player_Push" ObjectPath="\Events\Default Work Unit\Player\Player_Push" GUID="{F6EA65C6-4359-456D-9C36-7FFB4C9DFEA4}" DurationType="OneShot" DurationMin="0.49891666" DurationMax="0.73433334">
+					<MediaRefs>
+						<MediaRef Id="142240528"/>
+						<MediaRef Id="779934013"/>
+						<MediaRef Id="990015230"/>
+						<MediaRef Id="1026066387"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4069875609" Name="Player_Push_01" ObjectPath="\Events\Default Work Unit\Player_Push_01" GUID="{3E248CE3-E528-4F30-83EA-E7E3D968E5C4}" DurationType="OneShot" DurationMin="0.49891666" DurationMax="0.73433334">
+					<MediaRefs>
+						<MediaRef Id="142240528"/>
+						<MediaRef Id="779934013"/>
+						<MediaRef Id="990015230"/>
+						<MediaRef Id="1026066387"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2109641078" Name="Stop_Whisper" ObjectPath="\Events\Default Work Unit\Stop_Whisper" GUID="{3ACEC741-0731-48E3-AE6A-65E16B4D180B}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3367304250" Name="UI_Accept" ObjectPath="\Events\Default Work Unit\UI\UI_Accept" GUID="{7E618E16-6523-4B1A-8A6B-3F832112B199}" DurationType="OneShot" DurationMin="1.3393333" DurationMax="1.3393333">
+					<MediaRefs>
+						<MediaRef Id="295889543"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="585601976" Name="UI_Accept_01" ObjectPath="\Events\Default Work Unit\UI_01\UI_Accept_01" GUID="{E547B499-4D3E-49AA-84D0-277FE6674C20}" DurationType="OneShot" DurationMin="1.3393333" DurationMax="1.3393333">
+					<MediaRefs>
+						<MediaRef Id="295889543"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2249769530" Name="UI_Click" ObjectPath="\Events\Default Work Unit\UI\UI_Click" GUID="{09F1CAD4-6A28-4F6D-A56B-AD0300C3AE7C}" DurationType="OneShot" DurationMin="2.6825626" DurationMax="2.6825626">
+					<MediaRefs>
+						<MediaRef Id="497642096"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1184142776" Name="UI_Click_01" ObjectPath="\Events\Default Work Unit\UI_01\UI_Click_01" GUID="{AFA9E88F-4967-4DDE-AC46-C60E5C21C8BD}" DurationType="OneShot" DurationMin="2.6825626" DurationMax="2.6825626">
+					<MediaRefs>
+						<MediaRef Id="497642096"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2467171692" Name="UI_StartGame" ObjectPath="\Events\Default Work Unit\UI\UI_StartGame" GUID="{99EB72A3-4E25-4246-9F73-2153AB18E888}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="736572253"/>
+						<MediaRef Id="878741372"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="979392466" Name="UI_StartGame_01" ObjectPath="\Events\Default Work Unit\UI_01\UI_StartGame_01" GUID="{B6A81689-0EA1-49DA-B77F-DD810DA52420}" DurationType="OneShot" DurationMin="7.906542" DurationMax="7.906542">
+					<MediaRefs>
+						<MediaRef Id="736572253"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C4402114-EAEE-5F45-E5A0-196AE6FF2CD8}</FileHash>
+	<FileHash>{0BC62FD0-A841-92BC-84CE-3218FE38F283}</FileHash>
 </SoundBanksInfo>

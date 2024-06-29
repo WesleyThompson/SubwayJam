@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{751709C1-BAF1-193D-AB3C-69E88EAE800F}",
+    "Hash": "{92413F09-C721-25C1-D869-A7EF687B7AC9}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -66,42 +66,9 @@
        ]
       }
      }
-    ],
-    "GameParameters": [
-     {
-      "Id": "3407546846",
-      "Name": "Walking_Running",
-      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Walking_Running",
-      "GUID": "{AF6C6AE8-6459-4F64-9160-9C7A12AC42D5}"
-     }
-    ],
-    "SwitchGroups": [
-     {
-      "Id": "2385628198",
-      "Name": "Footsteps",
-      "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps",
-      "GUID": "{A320CEB1-4193-424A-BFD3-B56B7D052538}",
-      "GameParameterRef": {
-       "Id": "3407546846"
-      },
-      "Switches": [
-       {
-        "Id": "340271938",
-        "Name": "Walking",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps\\Walking",
-        "GUID": "{02424B7A-927F-4324-BCC2-6191D1B36953}"
-       },
-       {
-        "Id": "3863236874",
-        "Name": "Running",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps\\Running",
-        "GUID": "{BCA76798-E67D-4B54-A06C-E714A3FBB0A9}"
-       }
-      ]
-     }
     ]
    }
   ],
-  "FileHash": "{D5F2BCEC-6F8A-B447-C58E-13178C2C4395}"
+  "FileHash": "{7D06B6D2-5E58-2FB1-E5EF-FF9281543548}"
  }
 }
