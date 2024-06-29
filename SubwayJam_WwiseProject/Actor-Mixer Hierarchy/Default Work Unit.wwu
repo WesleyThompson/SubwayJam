@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Folder Name="Ambiences" ID="{6188AEDA-C57E-408F-8E35-5BB4037BFFF7}" ShortID="527255770">
 					<ChildrenList>
-						<Sound Name="Ambience_1" ID="{C28D52D2-6D01-4B6E-A1D7-6F318D045FA4}" ShortID="76539276">
+						<Sound Name="Train_Ambience_1" ID="{C28D52D2-6D01-4B6E-A1D7-6F318D045FA4}" ShortID="76539276">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Lowpass" Type="int16">
@@ -21,9 +21,6 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
 								</Reference>
-								<Reference Name="UserAuxSend0">
-									<ObjectRef Name="Reverb" ID="{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
-								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="SubwayJam_SFX-021" ID="{382DD62D-F68D-4CA5-BB30-7413BD46E8A1}">
@@ -36,6 +33,39 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="SubwayJam_SFX-021" ID="{382DD62D-F68D-4CA5-BB30-7413BD46E8A1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Hospital_Ambience" ID="{54854AFB-63C8-42B3-9A10-16D86214A56E}" ShortID="108839951">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SubwayJam_SFX-096" ID="{47A63406-A330-40A0-8454-1C910B8CE6FF}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="3"/>
+										<Property Name="FadeInShape" Type="int16" Value="7"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="3"/>
+										<Property Name="LoopBegin" Type="Real64" Value="3.0478690865235"/>
+										<Property Name="LoopEnd" Type="Real64" Value="58.4270753190165"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>SubwayJam_SFX-096.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="280858463"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SubwayJam_SFX-096" ID="{47A63406-A330-40A0-8454-1C910B8CE6FF}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -115,6 +145,11 @@
 						<Sound Name="Scary_Whisper_3" ID="{4673B478-C1BB-47B4-BE37-1D21A75A0C41}" ShortID="279670595">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>42</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-10</Value>
@@ -134,6 +169,10 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="SubwayJam_SFX-079" ID="{613E9EF9-7F8E-4E53-B5B3-DC42584334BD}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="1.97088133802817"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>SubwayJam_SFX-079.wav</AudioFile>
 									<MediaIDList>
@@ -147,6 +186,19 @@
 						</Sound>
 						<RandomSequenceContainer Name="Enemy_Attack" ID="{82BB9474-7F10-4131-978F-2BA3EAF372C9}" ShortID="527491423">
 							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{1114FC37-A162-40B7-A679-CB3918C6986C}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="10"/>
+													<Property Name="Min" Type="Real64" Value="-10"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -163,7 +215,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-2</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -492,6 +544,28 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<Sound Name="Player_Death" ID="{FB3A6EBD-FCE2-4189-8647-DD19E67AFA29}" ShortID="839388192">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78B5B498-02DA-4B0A-B2E8-B53129FE905C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DB1E6AD-B7AD-4F89-B2C1-47B2EF79A0ED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SubwayJam_SFX-097" ID="{1786BCEE-6FD5-4BD5-B499-5AE63B036AE4}">
+									<Language>SFX</Language>
+									<AudioFile>SubwayJam_SFX-097.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="903085184"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SubwayJam_SFX-097" ID="{1786BCEE-6FD5-4BD5-B499-5AE63B036AE4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Environment" ID="{BA04E1AC-0E47-4CF6-813A-68FA5CCC33C1}" ShortID="152063240">
