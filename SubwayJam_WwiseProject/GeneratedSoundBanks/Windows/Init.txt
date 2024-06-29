@@ -1,18 +1,5 @@
-Switch Group	ID	Name			Wwise Object Path	Notes
-	2385628198	Footsteps			\Default Work Unit\Footsteps	
-
-Switch	ID	Name	Switch Group			Notes
-	340271938	Walking	Footsteps			
-	3863236874	Running	Footsteps			
-
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
-
-Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	348963605	Reverb			\Default Work Unit\Master Audio Bus\Reverb	
-
-Effect plug-ins	ID	Name	Type				Notes
-	2265839006	Not_A_Yellow_Submarine	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

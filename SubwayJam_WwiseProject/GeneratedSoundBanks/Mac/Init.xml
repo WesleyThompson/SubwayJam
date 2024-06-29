@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{751709C1-BAF1-193D-AB3C-69E88EAE800F}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{92413F09-C721-25C1-D869-A7EF687B7AC9}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -26,19 +26,7 @@
 					</PluginRefs>
 				</AuxBus>
 			</AuxBusses>
-			<GameParameters>
-				<GameParameter Id="3407546846" Name="Walking_Running" ObjectPath="\Game Parameters\Default Work Unit\Walking_Running" GUID="{AF6C6AE8-6459-4F64-9160-9C7A12AC42D5}"/>
-			</GameParameters>
-			<SwitchGroups>
-				<SwitchGroup Id="2385628198" Name="Footsteps" ObjectPath="\Switches\Default Work Unit\Footsteps" GUID="{A320CEB1-4193-424A-BFD3-B56B7D052538}">
-					<GameParameterRef Id="3407546846"/>
-					<Switches>
-						<Switch Id="340271938" Name="Walking" ObjectPath="\Switches\Default Work Unit\Footsteps\Walking" GUID="{02424B7A-927F-4324-BCC2-6191D1B36953}"/>
-						<Switch Id="3863236874" Name="Running" ObjectPath="\Switches\Default Work Unit\Footsteps\Running" GUID="{BCA76798-E67D-4B54-A06C-E714A3FBB0A9}"/>
-					</Switches>
-				</SwitchGroup>
-			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D88FA18E-3EAA-D624-B99D-E26AF7220CF6}</FileHash>
+	<FileHash>{2562B204-0FFA-8E0E-42F1-1319BE1C5AE8}</FileHash>
 </SoundBanksInfo>
