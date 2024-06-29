@@ -13,3 +13,4 @@ Saved
 *.xcodeproj
 *.xcworkspace
 /Releases
+/Plugins/Wwise/Source/WwiseSoundEngine/Public/Generated
