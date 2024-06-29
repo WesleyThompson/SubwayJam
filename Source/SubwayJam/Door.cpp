@@ -6,6 +6,9 @@
 #include "Math/UnrealMathUtility.h"
 #include "Sound/SoundBase.h"
 #include "TimerManager.h"
+#include "../../Plugins/Wwise/Source/AkAudio/Classes/BlueprintNodes/PostEventAsync.h"
+#include "../../Plugins/Wwise/ThirdParty/include/AK/SoundEngine/Common/AkSoundEngine.h"
+#include "BlueprintNodes/PostEventAsync.h"
 
 // Sets default values for this component's properties
 UDoor::UDoor()
