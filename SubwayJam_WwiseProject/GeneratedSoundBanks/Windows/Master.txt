@@ -1,14 +1,46 @@
 Event	ID	Name			Wwise Object Path	Notes
-	278617630	Play_Ambience			\Default Work Unit\Play_Ambience	
+	334020027	Player_Death_Lose			\Default Work Unit\Player\Player_Death_Lose	
+	1068092414	Player_Hurt			\Default Work Unit\Player\Player_Hurt	
+	1307892918	Close_Door			\Default Work Unit\Close_Door	
+	1824944578	Play_EnemyAttack			\Default Work Unit\Play_EnemyAttack	
+	2109641078	Stop_Whisper			\Default Work Unit\Stop_Whisper	
+	2249769530	UI_Click			\Default Work Unit\UI\UI_Click	
+	2467171692	UI_StartGame			\Default Work Unit\UI\UI_StartGame	
+	2541567472	Play_Whisper			\Default Work Unit\Play_Whisper	
+	2570041344	Play_MenuMusic			\Default Work Unit\Play_MenuMusic	
+	2934549620	Open_Door			\Default Work Unit\Open_Door	
+	3367304250	UI_Accept			\Default Work Unit\UI\UI_Accept	
 	3854155799	Play_Footsteps			\Default Work Unit\Play_Footsteps	
+	4159206351	Play_HospitalAmbience_Win			\Default Work Unit\Ambiences\Play_HospitalAmbience_Win	
+	4237746237	Player_Push			\Default Work Unit\Player\Player_Push	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	182984018	Footstep_Walk_07	C:\Git\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-073_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footstep_Walk_07		27200
-	205447867	Footstep_Walk_02	C:\Git\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-068_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footstep_Walk_02		22690
-	276369504	Footstep_Walk_03	C:\Git\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-069_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footstep_Walk_03		21376
-	521592844	Footstep_Walk_06	C:\Git\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-072_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footstep_Walk_06		23654
-	555209315	Footstep_Walk_04	C:\Git\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-070_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footstep_Walk_04		22274
-	766860928	Footstep_Walk_01	C:\Git\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-067_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footstep_Walk_01		21822
-	874895551	Footstep_Walk_05	C:\Git\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-071_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footstep_Walk_05		25822
-	878741372	Ambience_1	C:\Git\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-021_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\Ambience_1		21314752
+	83805436	Door_Close	D:\UnrealProjects\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-087_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Door_Close		153168
+	106480371	Door_Open	D:\UnrealProjects\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-078_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Door_Open		305442
+	142240528	Push_1	D:\UnrealProjects\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-088_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Push\Push_1		47992
+	146943196	Enemy_Attack1	D:\UnrealProjects\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-084_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Enemy_Attack\Enemy_Attack1		558850
+	182984018	Footstep_Walk_07	D:\UnrealProjects\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-073_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footstep_Walk_07		27200
+	195761095	Menu_Music	D:\UnrealProjects\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\MenuMusic-001_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_System\Menu_Music\Menu_Music		16130016
+	205447867	Footstep_Walk_02	D:\UnrealProjects\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-068_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footstep_Walk_02		22690
+	276369504	Footstep_Walk_03	D:\UnrealProjects\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-069_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footstep_Walk_03		21376
+	280858463	Hospital_Ambience	D:\UnrealProjects\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-096_CB8E5662.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\Hospital_Ambience		11825416
+	281704824	Player_Hurt4	D:\UnrealProjects\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-095_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Hurt\Player_Hurt4		46190
+	295889543	UI_Accept	D:\UnrealProjects\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-077_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Accept		128672
+	448944935	Player_Hurt1	D:\UnrealProjects\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-092_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Hurt\Player_Hurt1		29846
+	497642096	UI_Click	D:\UnrealProjects\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-075_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Click		257622
+	521592844	Footstep_Walk_06	D:\UnrealProjects\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-072_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footstep_Walk_06		23654
+	555209315	Footstep_Walk_04	D:\UnrealProjects\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-070_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footstep_Walk_04		22274
+	600472025	Scary_Whisper_3	D:\UnrealProjects\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-079_10EE7A29.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Scary_Whisper_3		2920428
+	736572253	UI_StartGame	D:\UnrealProjects\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-074_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_StartGame		759124
+	766860928	Footstep_Walk_01	D:\UnrealProjects\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-067_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footstep_Walk_01		21822
+	772691773	Player_Hurt2	D:\UnrealProjects\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-093_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Hurt\Player_Hurt2		40666
+	779934013	Push_2	D:\UnrealProjects\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-089_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Push\Push_2		70592
+	782592832	Enemy_Attack2	D:\UnrealProjects\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-085_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Enemy_Attack\Enemy_Attack2		376140
+	792563256	Player_Hurt3	D:\UnrealProjects\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-094_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Hurt\Player_Hurt3		27726
+	848260569	Enemy_Attack3	D:\UnrealProjects\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-086_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Enemy_Attack\Enemy_Attack3		260576
+	874895551	Footstep_Walk_05	D:\UnrealProjects\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-071_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footstep_Walk_05		25822
+	878741372	Train_Ambience_1	D:\UnrealProjects\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-021_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\Train_Ambience_1		21314752
+	903085184	Player_Death	D:\UnrealProjects\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-097_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Death		2678060
+	990015230	Push_4	D:\UnrealProjects\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-091_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Push\Push_4		67228
+	1026066387	Push_3	D:\UnrealProjects\SubwayJam\SubwayJam_WwiseProject\.cache\Windows\SFX\SubwayJam_SFX-090_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Push\Push_3		67236
 

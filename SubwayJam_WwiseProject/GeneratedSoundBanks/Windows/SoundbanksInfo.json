@@ -18,11 +18,21 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{E58D4BCB-F352-1ADB-D35E-5C4CC11E8A79}",
+    "Hash": "{67D60BE0-6DD3-7E89-EA89-F84F443B6E35}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "2265839006",
+       "Name": "Not_A_Yellow_Submarine",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Claustrophobia\\Not_A_Yellow_Submarine",
+       "GUID": "{B5719071-C58D-49FA-8766-B1D986D017EC}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ],
      "AudioDevices": [
       {
        "Id": "2317455096",
@@ -50,37 +60,19 @@
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
      }
     ],
-    "GameParameters": [
+    "AuxBusses": [
      {
-      "Id": "3407546846",
-      "Name": "Walking_Running",
-      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Walking_Running",
-      "GUID": "{AF6C6AE8-6459-4F64-9160-9C7A12AC42D5}"
-     }
-    ],
-    "SwitchGroups": [
-     {
-      "Id": "2385628198",
-      "Name": "Footsteps",
-      "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps",
-      "GUID": "{A320CEB1-4193-424A-BFD3-B56B7D052538}",
-      "GameParameterRef": {
-       "Id": "3407546846"
-      },
-      "Switches": [
-       {
-        "Id": "340271938",
-        "Name": "Walking",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps\\Walking",
-        "GUID": "{02424B7A-927F-4324-BCC2-6191D1B36953}"
-       },
-       {
-        "Id": "3863236874",
-        "Name": "Running",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps\\Running",
-        "GUID": "{BCA76798-E67D-4B54-A06C-E714A3FBB0A9}"
-       }
-      ]
+      "Id": "348963605",
+      "Name": "Reverb",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+      "GUID": "{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2265839006"
+        }
+       ]
+      }
      }
     ]
    },
@@ -89,12 +81,509 @@
     "Type": "User",
     "GUID": "{91238402-E37E-4047-B3F7-05E61A95ED03}",
     "Language": "SFX",
-    "Hash": "{73D2F82E-3C9A-353F-4F7A-B26E8573544B}",
+    "Hash": "{AF092956-42B4-32FE-62AB-101993F7CBA6}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
-    "Path": "Master.bnk"
+    "Path": "Master.bnk",
+    "Media": [
+     {
+      "Id": "83805436",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SubwayJam_SFX-087.wav",
+      "CachePath": "SFX/SubwayJam_SFX-087_10C4C929.wem"
+     },
+     {
+      "Id": "106480371",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SubwayJam_SFX-078.wav",
+      "CachePath": "SFX/SubwayJam_SFX-078_10C4C929.wem"
+     },
+     {
+      "Id": "142240528",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SubwayJam_SFX-088.wav",
+      "CachePath": "SFX/SubwayJam_SFX-088_10C4C929.wem"
+     },
+     {
+      "Id": "146943196",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SubwayJam_SFX-084.wav",
+      "CachePath": "SFX/SubwayJam_SFX-084_10C4C929.wem"
+     },
+     {
+      "Id": "182984018",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SubwayJam_SFX-073.wav",
+      "CachePath": "SFX/SubwayJam_SFX-073_10C4C929.wem"
+     },
+     {
+      "Id": "195761095",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MenuMusic-001.wav",
+      "CachePath": "SFX/MenuMusic-001_D79FB2B7.wem"
+     },
+     {
+      "Id": "205447867",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SubwayJam_SFX-068.wav",
+      "CachePath": "SFX/SubwayJam_SFX-068_10C4C929.wem"
+     },
+     {
+      "Id": "276369504",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SubwayJam_SFX-069.wav",
+      "CachePath": "SFX/SubwayJam_SFX-069_10C4C929.wem"
+     },
+     {
+      "Id": "280858463",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SubwayJam_SFX-096.wav",
+      "CachePath": "SFX/SubwayJam_SFX-096_CB8E5662.wem"
+     },
+     {
+      "Id": "281704824",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SubwayJam_SFX-095.wav",
+      "CachePath": "SFX/SubwayJam_SFX-095_10C4C929.wem"
+     },
+     {
+      "Id": "295889543",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SubwayJam_SFX-077.wav",
+      "CachePath": "SFX/SubwayJam_SFX-077_10C4C929.wem"
+     },
+     {
+      "Id": "448944935",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SubwayJam_SFX-092.wav",
+      "CachePath": "SFX/SubwayJam_SFX-092_10C4C929.wem"
+     },
+     {
+      "Id": "497642096",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SubwayJam_SFX-075.wav",
+      "CachePath": "SFX/SubwayJam_SFX-075_10C4C929.wem"
+     },
+     {
+      "Id": "521592844",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SubwayJam_SFX-072.wav",
+      "CachePath": "SFX/SubwayJam_SFX-072_10C4C929.wem"
+     },
+     {
+      "Id": "555209315",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SubwayJam_SFX-070.wav",
+      "CachePath": "SFX/SubwayJam_SFX-070_10C4C929.wem"
+     },
+     {
+      "Id": "600472025",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SubwayJam_SFX-079.wav",
+      "CachePath": "SFX/SubwayJam_SFX-079_10EE7A29.wem"
+     },
+     {
+      "Id": "736572253",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SubwayJam_SFX-074.wav",
+      "CachePath": "SFX/SubwayJam_SFX-074_10C4C929.wem"
+     },
+     {
+      "Id": "766860928",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SubwayJam_SFX-067.wav",
+      "CachePath": "SFX/SubwayJam_SFX-067_10C4C929.wem"
+     },
+     {
+      "Id": "772691773",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SubwayJam_SFX-093.wav",
+      "CachePath": "SFX/SubwayJam_SFX-093_10C4C929.wem"
+     },
+     {
+      "Id": "779934013",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SubwayJam_SFX-089.wav",
+      "CachePath": "SFX/SubwayJam_SFX-089_10C4C929.wem"
+     },
+     {
+      "Id": "782592832",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SubwayJam_SFX-085.wav",
+      "CachePath": "SFX/SubwayJam_SFX-085_10C4C929.wem"
+     },
+     {
+      "Id": "792563256",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SubwayJam_SFX-094.wav",
+      "CachePath": "SFX/SubwayJam_SFX-094_10C4C929.wem"
+     },
+     {
+      "Id": "848260569",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SubwayJam_SFX-086.wav",
+      "CachePath": "SFX/SubwayJam_SFX-086_10C4C929.wem"
+     },
+     {
+      "Id": "874895551",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SubwayJam_SFX-071.wav",
+      "CachePath": "SFX/SubwayJam_SFX-071_10C4C929.wem"
+     },
+     {
+      "Id": "878741372",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SubwayJam_SFX-021.wav",
+      "CachePath": "SFX/SubwayJam_SFX-021_D79FB2B7.wem"
+     },
+     {
+      "Id": "903085184",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SubwayJam_SFX-097.wav",
+      "CachePath": "SFX/SubwayJam_SFX-097_10C4C929.wem"
+     },
+     {
+      "Id": "990015230",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SubwayJam_SFX-091.wav",
+      "CachePath": "SFX/SubwayJam_SFX-091_10C4C929.wem"
+     },
+     {
+      "Id": "1026066387",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SubwayJam_SFX-090.wav",
+      "CachePath": "SFX/SubwayJam_SFX-090_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1307892918",
+      "Name": "Close_Door",
+      "ObjectPath": "\\Events\\Default Work Unit\\Close_Door",
+      "GUID": "{7AEBF64B-7726-4E1E-8596-7CB6250AEAE5}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.5945",
+      "DurationMax": "1.5945",
+      "MediaRefs": [
+       {
+        "Id": "83805436"
+       }
+      ]
+     },
+     {
+      "Id": "2934549620",
+      "Name": "Open_Door",
+      "ObjectPath": "\\Events\\Default Work Unit\\Open_Door",
+      "GUID": "{07DD551E-72D5-4502-9ACB-355CEF2C2F02}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.1806874",
+      "DurationMax": "3.1806874",
+      "MediaRefs": [
+       {
+        "Id": "106480371"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}"
+       }
+      ]
+     },
+     {
+      "Id": "1824944578",
+      "Name": "Play_EnemyAttack",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_EnemyAttack",
+      "GUID": "{335890B3-6D54-495F-A169-2A280AF1733B}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.4881377",
+      "DurationMax": "6.3471413",
+      "MediaRefs": [
+       {
+        "Id": "146943196"
+       },
+       {
+        "Id": "782592832"
+       },
+       {
+        "Id": "848260569"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}"
+       }
+      ]
+     },
+     {
+      "Id": "3854155799",
+      "Name": "Play_Footsteps",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Footsteps",
+      "GUID": "{72053ECC-DB2B-4754-95DC-82472937336B}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.22166666",
+      "DurationMax": "0.28233334",
+      "MediaRefs": [
+       {
+        "Id": "182984018"
+       },
+       {
+        "Id": "205447867"
+       },
+       {
+        "Id": "276369504"
+       },
+       {
+        "Id": "521592844"
+       },
+       {
+        "Id": "555209315"
+       },
+       {
+        "Id": "766860928"
+       },
+       {
+        "Id": "874895551"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}"
+       }
+      ]
+     },
+     {
+      "Id": "4159206351",
+      "Name": "Play_HospitalAmbience_Win",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambiences\\Play_HospitalAmbience_Win",
+      "GUID": "{4FB4CA8F-594C-4B8D-9843-36BE5AB2F4B7}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "280858463"
+       }
+      ]
+     },
+     {
+      "Id": "2570041344",
+      "Name": "Play_MenuMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_MenuMusic",
+      "GUID": "{CA80A137-A31F-4910-B231-70317A8827DE}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "195761095"
+       }
+      ]
+     },
+     {
+      "Id": "2541567472",
+      "Name": "Play_Whisper",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Whisper",
+      "GUID": "{A6EB7C90-9E0A-409C-BF63-EBE95F899647}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "600472025"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}"
+       }
+      ]
+     },
+     {
+      "Id": "334020027",
+      "Name": "Player_Death_Lose",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\Player_Death_Lose",
+      "GUID": "{964561DB-3C70-40EC-8218-E00D0D00C84D}",
+      "DurationType": "OneShot",
+      "DurationMin": "13.947729",
+      "DurationMax": "13.947729",
+      "MediaRefs": [
+       {
+        "Id": "903085184"
+       }
+      ]
+     },
+     {
+      "Id": "1068092414",
+      "Name": "Player_Hurt",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\Player_Hurt",
+      "GUID": "{532ECB46-FC93-4119-8854-4A5B8AC937F2}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.2716588",
+      "DurationMax": "0.5086968",
+      "MediaRefs": [
+       {
+        "Id": "281704824"
+       },
+       {
+        "Id": "448944935"
+       },
+       {
+        "Id": "772691773"
+       },
+       {
+        "Id": "792563256"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}"
+       }
+      ]
+     },
+     {
+      "Id": "4237746237",
+      "Name": "Player_Push",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\Player_Push",
+      "GUID": "{F6EA65C6-4359-456D-9C36-7FFB4C9DFEA4}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.49891666",
+      "DurationMax": "0.73433334",
+      "MediaRefs": [
+       {
+        "Id": "142240528"
+       },
+       {
+        "Id": "779934013"
+       },
+       {
+        "Id": "990015230"
+       },
+       {
+        "Id": "1026066387"
+       }
+      ]
+     },
+     {
+      "Id": "2109641078",
+      "Name": "Stop_Whisper",
+      "ObjectPath": "\\Events\\Default Work Unit\\Stop_Whisper",
+      "GUID": "{3ACEC741-0731-48E3-AE6A-65E16B4D180B}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "3367304250",
+      "Name": "UI_Accept",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\UI_Accept",
+      "GUID": "{7E618E16-6523-4B1A-8A6B-3F832112B199}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.3393333",
+      "DurationMax": "1.3393333",
+      "MediaRefs": [
+       {
+        "Id": "295889543"
+       }
+      ]
+     },
+     {
+      "Id": "2249769530",
+      "Name": "UI_Click",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\UI_Click",
+      "GUID": "{09F1CAD4-6A28-4F6D-A56B-AD0300C3AE7C}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.6825626",
+      "DurationMax": "2.6825626",
+      "MediaRefs": [
+       {
+        "Id": "497642096"
+       }
+      ]
+     },
+     {
+      "Id": "2467171692",
+      "Name": "UI_StartGame",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\UI_StartGame",
+      "GUID": "{99EB72A3-4E25-4246-9F73-2153AB18E888}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "736572253"
+       },
+       {
+        "Id": "878741372"
+       }
+      ]
+     }
+    ]
    }
   ],
-  "FileHash": "{13CEF998-EB38-8919-F64A-94E3030CE5A2}"
+  "FileHash": "{3DBFFACB-EED0-9B2D-E86B-5091BC69DEE0}"
  }
 }

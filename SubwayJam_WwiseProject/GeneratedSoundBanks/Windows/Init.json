@@ -10,11 +10,21 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{E58D4BCB-F352-1ADB-D35E-5C4CC11E8A79}",
+    "Hash": "{67D60BE0-6DD3-7E89-EA89-F84F443B6E35}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "2265839006",
+       "Name": "Not_A_Yellow_Submarine",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Claustrophobia\\Not_A_Yellow_Submarine",
+       "GUID": "{B5719071-C58D-49FA-8766-B1D986D017EC}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ],
      "AudioDevices": [
       {
        "Id": "2317455096",
@@ -42,41 +52,23 @@
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
      }
     ],
-    "GameParameters": [
+    "AuxBusses": [
      {
-      "Id": "3407546846",
-      "Name": "Walking_Running",
-      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Walking_Running",
-      "GUID": "{AF6C6AE8-6459-4F64-9160-9C7A12AC42D5}"
-     }
-    ],
-    "SwitchGroups": [
-     {
-      "Id": "2385628198",
-      "Name": "Footsteps",
-      "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps",
-      "GUID": "{A320CEB1-4193-424A-BFD3-B56B7D052538}",
-      "GameParameterRef": {
-       "Id": "3407546846"
-      },
-      "Switches": [
-       {
-        "Id": "340271938",
-        "Name": "Walking",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps\\Walking",
-        "GUID": "{02424B7A-927F-4324-BCC2-6191D1B36953}"
-       },
-       {
-        "Id": "3863236874",
-        "Name": "Running",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps\\Running",
-        "GUID": "{BCA76798-E67D-4B54-A06C-E714A3FBB0A9}"
-       }
-      ]
+      "Id": "348963605",
+      "Name": "Reverb",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+      "GUID": "{9C34D26B-35E5-45C5-9070-8E4B6E698CB7}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2265839006"
+        }
+       ]
+      }
      }
     ]
    }
   ],
-  "FileHash": "{AC8ECFA7-0AE4-13BC-320E-1EE34CD21EA7}"
+  "FileHash": "{DB017C6B-C90A-CD46-1A36-DAB6EB6F6DA0}"
  }
 }
