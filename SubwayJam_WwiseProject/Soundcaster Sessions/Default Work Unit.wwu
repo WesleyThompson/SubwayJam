@@ -1,6 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{AAFF9837-4913-4260-9D43-68067CD9E537}" SchemaVersion="110">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{AAFF9837-4913-4260-9D43-68067CD9E537}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{AAFF9837-4913-4260-9D43-68067CD9E537}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Test" ID="{B8850FC8-65F5-4408-AB27-36CC470A14C1}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Ambience_1" ID="{C28D52D2-6D01-4B6E-A1D7-6F318D045FA4}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_Hurt" ID="{86CB504C-C8AC-4C52-8E09-3DE379A9A9C9}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="UI_StartGame" ID="{3D8060C6-D7C7-4789-BA57-F3771490A9B5}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Enemy_Attack" ID="{82BB9474-7F10-4131-978F-2BA3EAF372C9}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Scary_Whisper_3" ID="{4673B478-C1BB-47B4-BE37-1D21A75A0C41}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="UI_Accept" ID="{39F2F446-F5FB-4877-BBF8-29E33767DA1E}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Music_System" ID="{E31D92B9-67B7-461F-B3A9-6EAFE7305C10}" WorkUnitID="{F0CAAC52-2570-48B4-88CF-1697D4707EE1}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Door_Open" ID="{01D3ACE9-E713-4F69-AEBB-CA6F205579F2}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="UI_Click" ID="{411002A3-66FE-47D1-A67D-894289E2BEFD}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Footsteps" ID="{9C0DB1DF-68BA-4EFE-BA3E-9FC108BD5061}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
