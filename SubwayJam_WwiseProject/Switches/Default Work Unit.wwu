@@ -1,38 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{DF171165-E186-460F-B5FE-B0625C3F63FF}" SchemaVersion="110">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{DF171165-E186-460F-B5FE-B0625C3F63FF}" PersistMode="Standalone">
-			<ChildrenList>
-				<SwitchGroup Name="Footsteps" ID="{A320CEB1-4193-424A-BFD3-B56B7D052538}">
-					<PropertyList>
-						<Property Name="UseGameParameter" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Switch Name="Walking" ID="{02424B7A-927F-4324-BCC2-6191D1B36953}"/>
-						<Switch Name="Running" ID="{BCA76798-E67D-4B54-A06C-E714A3FBB0A9}"/>
-					</ChildrenList>
-					<SwitchOnRTPC>
-						<GameParameterRef Name="Walking_Running" ID="{AF6C6AE8-6459-4F64-9160-9C7A12AC42D5}"/>
-						<Curve Name="" ID="{A7E54BBB-8965-4DA9-A06D-5077AB78EE0E}">
-							<PropertyList>
-								<Property Name="Flags" Type="int32" Value="65537"/>
-							</PropertyList>
-							<PointList>
-								<Point>
-									<XPos>0</XPos>
-									<YPos>0</YPos>
-									<Flags>5</Flags>
-								</Point>
-								<Point>
-									<XPos>100</XPos>
-									<YPos>0</YPos>
-									<Flags>37</Flags>
-								</Point>
-							</PointList>
-						</Curve>
-					</SwitchOnRTPC>
-				</SwitchGroup>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{DF171165-E186-460F-B5FE-B0625C3F63FF}" PersistMode="Standalone"/>
 	</Switches>
 </WwiseDocument>

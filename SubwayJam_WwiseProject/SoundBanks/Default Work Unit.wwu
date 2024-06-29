@@ -6,7 +6,7 @@
 				<SoundBank Name="Master" ID="{91238402-E37E-4047-B3F7-05E61A95ED03}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Footsteps" ID="{72053ECC-DB2B-4754-95DC-82472937336B}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Ambience" ID="{8B926483-FB57-4B64-9ECC-E66678213C51}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_TrainAmbience" ID="{8B926483-FB57-4B64-9ECC-E66678213C51}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

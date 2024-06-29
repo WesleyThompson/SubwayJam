@@ -6,43 +6,43 @@
 				<SoundcasterSession Name="Test" ID="{B8850FC8-65F5-4408-AB27-36CC470A14C1}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Ambience_1" ID="{C28D52D2-6D01-4B6E-A1D7-6F318D045FA4}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+							<ObjectRef Name="Play_MenuMusic" ID="{CA80A137-A31F-4910-B231-70317A8827DE}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Player_Hurt" ID="{86CB504C-C8AC-4C52-8E09-3DE379A9A9C9}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+							<ObjectRef Name="UI_Click" ID="{09F1CAD4-6A28-4F6D-A56B-AD0300C3AE7C}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}"/>
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="UI_StartGame" ID="{3D8060C6-D7C7-4789-BA57-F3771490A9B5}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+							<ObjectRef Name="Player_Death_Lose" ID="{964561DB-3C70-40EC-8218-E00D0D00C84D}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}"/>
 							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Enemy_Attack" ID="{82BB9474-7F10-4131-978F-2BA3EAF372C9}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+							<ObjectRef Name="Stop_Whisper" ID="{3ACEC741-0731-48E3-AE6A-65E16B4D180B}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}"/>
 							<Position X="0" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Scary_Whisper_3" ID="{4673B478-C1BB-47B4-BE37-1D21A75A0C41}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
-							<Position X="1" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="UI_Accept" ID="{39F2F446-F5FB-4877-BBF8-29E33767DA1E}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+							<ObjectRef Name="UI_Accept" ID="{7E618E16-6523-4B1A-8A6B-3F832112B199}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}"/>
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Music_System" ID="{E31D92B9-67B7-461F-B3A9-6EAFE7305C10}" WorkUnitID="{F0CAAC52-2570-48B4-88CF-1697D4707EE1}"/>
+							<ObjectRef Name="Play_EnemyAttack" ID="{335890B3-6D54-495F-A169-2A280AF1733B}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}"/>
 							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Door_Open" ID="{01D3ACE9-E713-4F69-AEBB-CA6F205579F2}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+							<ObjectRef Name="Play_EnemyAttack" ID="{335890B3-6D54-495F-A169-2A280AF1733B}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_HospitalAmbience_Win" ID="{4FB4CA8F-594C-4B8D-9843-36BE5AB2F4B7}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}"/>
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="UI_Click" ID="{411002A3-66FE-47D1-A67D-894289E2BEFD}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+							<ObjectRef Name="UI_StartGame" ID="{99EB72A3-4E25-4246-9F73-2153AB18E888}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}"/>
 							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Footsteps" ID="{9C0DB1DF-68BA-4EFE-BA3E-9FC108BD5061}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+							<ObjectRef Name="Play_Whisper" ID="{A6EB7C90-9E0A-409C-BF63-EBE95F899647}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}"/>
 							<Position X="2" Y="2"/>
 						</Module>
 					</ModuleList>
