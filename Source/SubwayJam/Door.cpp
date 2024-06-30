@@ -2,13 +2,11 @@
 
 
 #include "Door.h"
-#include "Kismet/GameplayStatics.h"
+
+#include "AkGameplayStatics.h"
 #include "Math/UnrealMathUtility.h"
 #include "Sound/SoundBase.h"
 #include "TimerManager.h"
-#include "../../Plugins/Wwise/Source/AkAudio/Classes/BlueprintNodes/PostEventAsync.h"
-#include "../../Plugins/Wwise/ThirdParty/include/AK/SoundEngine/Common/AkSoundEngine.h"
-#include "BlueprintNodes/PostEventAsync.h"
 
 // Sets default values for this component's properties
 UDoor::UDoor()
@@ -63,7 +61,7 @@ void UDoor::OpenDoor()
 	UE_LOG(LogTemp, Display, TEXT("Opening Door"));
 	if(!Locked)
 	{
-		UGameplayStatics::PlaySoundAtLocation(GetWorld(), OpenSound, GetOwner()->GetActorLocation());
+		UAkGameplayStatics::PostEventAtLocationByName(OpenSoundEventName, StartLocation + OpenOffset * 0.5, GetOwner()->GetActorRotation(), GetWorld());
 	}
 
 	TargetLocation = OpenLocation;
@@ -79,7 +77,7 @@ void UDoor::CloseDoor()
 {
 	if(!Locked)
 	{
-		UGameplayStatics::PlaySoundAtLocation(GetWorld(), CloseSound, GetOwner()->GetActorLocation());
+		UAkGameplayStatics::PostEventAtLocationByName(CloseSoundEventName, StartLocation + OpenOffset * 0.5, GetOwner()->GetActorRotation(), GetWorld());
 	}
 
 	TargetLocation = StartLocation;

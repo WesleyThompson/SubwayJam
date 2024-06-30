@@ -6,8 +6,6 @@
 #include "Interactable.h"
 #include "Door.generated.h"
 
-class USoundBase;
-
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class SUBWAYJAM_API UDoor : public UInteractable
 {
@@ -47,9 +45,9 @@ private:
 	void DoorStateCheck();
 	
 	UPROPERTY(EditAnywhere)
-	USoundBase* OpenSound;
+	FString OpenSoundEventName;
 	UPROPERTY(EditAnywhere)
-	USoundBase* CloseSound;
+	FString CloseSoundEventName;
 
 	FVector OpenLocation;
 	FVector StartLocation;
