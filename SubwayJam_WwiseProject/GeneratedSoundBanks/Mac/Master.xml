@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="4056684167" Type="User" GUID="{91238402-E37E-4047-B3F7-05E61A95ED03}" Language="SFX" Hash="{AF092956-42B4-32FE-62AB-101993F7CBA6}">
+		<SoundBank Id="4056684167" Type="User" GUID="{91238402-E37E-4047-B3F7-05E61A95ED03}" Language="SFX" Hash="{624D1C6D-C11F-B022-6AD7-194F509264BE}">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
@@ -167,6 +167,11 @@
 						<MediaRef Id="195761095"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3198155892" Name="Play_TrainAmbience" ObjectPath="\Events\Default Work Unit\Play_TrainAmbience" GUID="{8C959F3E-7684-4E46-8DEC-51A933D60753}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="878741372"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2541567472" Name="Play_Whisper" ObjectPath="\Events\Default Work Unit\Play_Whisper" GUID="{A6EB7C90-9E0A-409C-BF63-EBE95F899647}" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="600472025"/>
@@ -210,14 +215,13 @@
 						<MediaRef Id="497642096"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2467171692" Name="UI_StartGame" ObjectPath="\Events\Default Work Unit\UI\UI_StartGame" GUID="{99EB72A3-4E25-4246-9F73-2153AB18E888}" DurationType="Infinite">
+				<Event Id="2467171692" Name="UI_StartGame" ObjectPath="\Events\Default Work Unit\UI\UI_StartGame" GUID="{99EB72A3-4E25-4246-9F73-2153AB18E888}" DurationType="OneShot" DurationMin="7.906542" DurationMax="7.906542">
 					<MediaRefs>
 						<MediaRef Id="736572253"/>
-						<MediaRef Id="878741372"/>
 					</MediaRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{EB9C8A00-661C-8FED-60E0-15B140746BE2}</FileHash>
+	<FileHash>{059B5095-6E9B-3C7E-F8A8-285F25BF2867}</FileHash>
 </SoundBanksInfo>

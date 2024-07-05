@@ -56,13 +56,6 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{56F45040-6EE7-4CC3-8507-7E4145762BC7}" ShortID="630346058">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Train_Ambience_1" ID="{C28D52D2-6D01-4B6E-A1D7-6F318D045FA4}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="UI_Click" ID="{09F1CAD4-6A28-4F6D-A56B-AD0300C3AE7C}">
@@ -214,6 +207,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Scary_Whisper_3" ID="{4673B478-C1BB-47B4-BE37-1D21A75A0C41}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_TrainAmbience" ID="{8C959F3E-7684-4E46-8DEC-51A933D60753}">
+					<ChildrenList>
+						<Action Name="" ID="{549A87CC-E231-4536-BCC1-982DBBD9BB25}" ShortID="887203544">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Train_Ambience_1" ID="{C28D52D2-6D01-4B6E-A1D7-6F318D045FA4}" WorkUnitID="{A0623F86-335D-4E9A-9710-BB227982DB85}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

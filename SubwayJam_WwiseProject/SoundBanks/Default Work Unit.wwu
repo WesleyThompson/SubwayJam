@@ -18,6 +18,7 @@
 						<ObjectRef Name="UI_Accept" ID="{7E618E16-6523-4B1A-8A6B-3F832112B199}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_HospitalAmbience_Win" ID="{4FB4CA8F-594C-4B8D-9843-36BE5AB2F4B7}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Close_Door" ID="{7AEBF64B-7726-4E1E-8596-7CB6250AEAE5}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_TrainAmbience" ID="{8C959F3E-7684-4E46-8DEC-51A933D60753}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI_Click" ID="{09F1CAD4-6A28-4F6D-A56B-AD0300C3AE7C}" WorkUnitID="{305F92D9-1CAF-4289-B8C8-F41A126D08A0}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

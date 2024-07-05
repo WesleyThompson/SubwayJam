@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{91238402-E37E-4047-B3F7-05E61A95ED03}",
     "Language": "SFX",
-    "Hash": "{AF092956-42B4-32FE-62AB-101993F7CBA6}",
+    "Hash": "{624D1C6D-C11F-B022-6AD7-194F509264BE}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
@@ -370,6 +370,18 @@
       ]
      },
      {
+      "Id": "3198155892",
+      "Name": "Play_TrainAmbience",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_TrainAmbience",
+      "GUID": "{8C959F3E-7684-4E46-8DEC-51A933D60753}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "878741372"
+       }
+      ]
+     },
+     {
       "Id": "2541567472",
       "Name": "Play_Whisper",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Whisper",
@@ -500,19 +512,18 @@
       "Name": "UI_StartGame",
       "ObjectPath": "\\Events\\Default Work Unit\\UI\\UI_StartGame",
       "GUID": "{99EB72A3-4E25-4246-9F73-2153AB18E888}",
-      "DurationType": "Infinite",
+      "DurationType": "OneShot",
+      "DurationMin": "7.906542",
+      "DurationMax": "7.906542",
       "MediaRefs": [
        {
         "Id": "736572253"
-       },
-       {
-        "Id": "878741372"
        }
       ]
      }
     ]
    }
   ],
-  "FileHash": "{88B8F893-6C8E-5019-8B38-206D5096024C}"
+  "FileHash": "{9DB05776-7C78-6055-88A4-7D713A879DFF}"
  }
 }
